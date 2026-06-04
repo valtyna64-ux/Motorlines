@@ -1136,7 +1136,7 @@
 }
 
 .hero-line{
-    width:120px;
+    width:1px;
     height:2px;
     background:#000;
     margin:25px 0;
@@ -1160,12 +1160,4 @@
     font-weight:bold;
 }
 
-.hero-image{
-    width:10%;
-    text-align:center;
-}
 
-.hero-image img{
-    width:20%;
-    max-width:7px;
-}
