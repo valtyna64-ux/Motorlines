@@ -1160,4 +1160,15 @@
     font-weight:bold;
 }
 
+  .hero-image{
+    width:100%;
+    order:2; /* imagen debajo */
+    margin-top:10px;
+  }
+
+  .hero-image img{
+    width:180px;
+    max-width:60%;
+    height:auto;
+  }
 
