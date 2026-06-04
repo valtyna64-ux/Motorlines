@@ -128,13 +128,32 @@
 /* TARJETAS */
 
 .story-card {
-  width: 260px;
+  width: 300px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.story-card:hover {
-  transform: translateY(-5px);
+.story-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.story-card h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 12px;
+  color: #111;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+.story-card span {
+  display: block;
+  margin-top: 10px;
+  color: gray;
+  font-size: 14px;
 }
 
 /* IMAGEN */
@@ -1172,6 +1191,33 @@
     max-width:90%;
     height:auto;
     
+}
+
+/* HISTORIAS MOBILE */
+
+@media (max-width:768px){
+
+  .stories{
+    padding: 40px 20px;
+  }
+
+  .stories-title{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .story-card{
+    width: 100%;
+  }
+
+  .story-card img{
+    height: 220px;
+  }
+
+  .story-card h3{
+    font-size: 20px;
+  }
+
 }
   }
 
