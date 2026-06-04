@@ -1164,13 +1164,14 @@
     width:100%;
     order:2; /* imagen debajo */
     margin-top:10px;
+    transform: translateX(30px);
   }
 
   .hero-image img{
     width:480px;
     max-width:90%;
     height:auto;
-     transform: translateX(40px);
+    
 }
   }
 
