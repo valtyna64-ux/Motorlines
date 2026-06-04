@@ -1327,7 +1327,31 @@ h2, h3 {
   .hero-text h1{
     font-size:40px;
   }
+/* PRUEBA MOBILE */
 
+@media screen and (max-width:768px){
+
+.hero{
+    display:flex !important;
+    flex-direction:column !important;
+    padding:20px !important;
+    min-height:auto !important;
+}
+
+.hero-text{
+    width:100% !important;
+}
+
+.hero-image{
+    width:100% !important;
+    margin-top:10px !important;
+}
+
+.hero-image img{
+    max-width:220px !important;
+}
+
+}
 }
 }
 
