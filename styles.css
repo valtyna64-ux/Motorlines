@@ -1011,36 +1011,7 @@ h2, h3 {
   padding: 0 15px 20px;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVE GENERAL */
-/* ========================= */
 
-@media(max-width: 900px){
-
-  .article-layout,
-  .news-layout,
-  .product-page{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sidebar{
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .main-news,
-  .article-content{
-    width: 100%;
-  }
-
-  .sidebar-art img{
-    width: 100%;
-    padding: 0;
-    height: auto;
-  }
-
-}
 
 /* 📱 MOBILE */
 
