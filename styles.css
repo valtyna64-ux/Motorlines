@@ -127,7 +127,7 @@
 }
 /* TARJETAS */
 .story-card {
-  width: 260px;
+  width: 60px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
