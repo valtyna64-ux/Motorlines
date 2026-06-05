@@ -1161,6 +1161,25 @@
     height:auto;
     
 }
+@media(max-width:768px){
+
+  .stories{
+    padding:20px;
+  }
+
+  .story-card{
+    width:100%;
+  }
+
+  .story-card img{
+    height:220px;
+  }
+
+  .story-card h3{
+    font-size:22px;
+  }
+
+}
 
 
   }
