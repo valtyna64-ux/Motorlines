@@ -97,7 +97,18 @@
 /* HISTORIAS */
 
 /* SECCION HISTORIAS */
+.stories-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+}
 
+.story-card{
+  width:450px;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
 .stories {
   background: #f2f2f2;
   padding: 10px 250px;
@@ -141,7 +152,7 @@
 
 .story-card img {
   width: 40%;
-  height: 440px;
+  height: 60px;
   object-fit: cover;
   display: block;
 }
