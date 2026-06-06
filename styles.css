@@ -1143,7 +1143,7 @@
     width:100%;
     order:2; /* imagen debajo */
     margin-top:10px;
-    transform: translateX(30px);
+    transform: none;
   }
 
   .hero-image img{
@@ -1153,6 +1153,45 @@
     
 }
 
+/* 📱 HERO MOBILE */
+
+@media (max-width: 768px){
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-text{
+    width: 100%;
+  }
+
+  .hero-text h1{
+    font-size: 55px;
+    line-height: 1.05;
+  }
+
+  .hero-text p{
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .hero-image{
+    width: 100%;
+    margin-top: 25px;
+    transform: none; /* elimina el desplazamiento */
+    order: 3;
+  }
+
+  .hero-image img{
+    width: 180px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+}
 
   }
 
