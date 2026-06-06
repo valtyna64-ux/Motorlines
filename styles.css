@@ -1142,7 +1142,7 @@
   .hero-image{
     width:100%;
     order:2; /* imagen debajo */
-    margin-top:10px;
+    margin-top:200px;
     transform: none;
   }
 
