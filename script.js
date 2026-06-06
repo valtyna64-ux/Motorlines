@@ -1,24 +1,36 @@
+/* HISTORIAS */
+
 const slider = document.querySelector(".stories-slider");
 const leftBtn = document.querySelector(".left");
 const rightBtn = document.querySelector(".right");
 
-rightBtn.addEventListener("click", () => {
-  slider.scrollLeft += 350;
-});
+if (slider && leftBtn && rightBtn) {
 
-leftBtn.addEventListener("click", () => {
-  slider.scrollLeft -= 350;
-});
+  rightBtn.addEventListener("click", () => {
+    slider.scrollLeft += 350;
+  });
+
+  leftBtn.addEventListener("click", () => {
+    slider.scrollLeft -= 350;
+  });
+
+}
+
+
+/* MERCH */
 
 const merchSlider = document.querySelector(".merch-slider");
-
 const merchLeft = document.querySelector(".merch-left");
 const merchRight = document.querySelector(".merch-right");
 
-merchRight.addEventListener("click", () => {
-  merchSlider.scrollLeft += 300;
-});
+if (merchSlider && merchLeft && merchRight) {
 
-merchLeft.addEventListener("click", () => {
-  merchSlider.scrollLeft -= 300;
-});
+  merchRight.addEventListener("click", () => {
+    merchSlider.scrollLeft += merchSlider.offsetWidth;
+  });
+
+  merchLeft.addEventListener("click", () => {
+    merchSlider.scrollLeft -= merchSlider.offsetWidth;
+  });
+
+}
