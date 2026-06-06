@@ -192,11 +192,18 @@
   position: relative;
 }
 
+
+
 .merch-slider {
   display: flex;
   gap: 20px;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.merch-slider::-webkit-scrollbar{
+  display:none;
 }
 
 .shop-card {
@@ -252,6 +259,14 @@
 
 .merch-right {
   margin-left: 15px;
+}
+
+@media (max-width:768px){
+
+  .shop-card{
+    min-width: 100%;
+  }
+
 }
 
 
