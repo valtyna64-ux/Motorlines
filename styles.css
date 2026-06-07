@@ -111,7 +111,7 @@
 
 .stories-container{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:repeat(2, 1fr);
   gap:40px;
   max-width:1400px;
   margin:auto;
@@ -123,26 +123,6 @@
   transition:0.3s;
 }
 
-/* 📱 MÓVIL */
-@media (max-width:768px){
-
-  .stories-container{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .story-card{
-    width:100%;
-  }
-@media (max-width:768px){
-
-  .stories-container{
-    grid-template-columns:1fr !important;
-    background:red;
-  }
-
-}
-}
 .story-card:hover{
   transform:translateY(-5px);
 }
@@ -167,11 +147,51 @@
   font-size:15px;
 }
 
-@media (max-width:768px){
+/* 📱 MÓVIL */
+
+@media screen and (max-width:768px){
+
+  .stories{
+    padding:20px;
+  }
+
+  .stories-container{
+    grid-template-columns:1fr !important;
+    gap:25px;
+  }
 
   .story-card{
     width:100%;
   }
+
+  .story-card img{
+    height:220px;
+  }
+
+  .story-card h3{
+    font-size:20px;
+  }
+
+}
+@media (max-width:768px){
+
+  .stories-container{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .story-card{
+    width:100%;
+  }
+
+@media (max-width:768px){
+
+  .stories-container{
+    grid-template-columns:1fr !important;
+    background:red;
+  }
+
+}
 
 }
 /* FLECHAS */
