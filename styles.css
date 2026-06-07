@@ -110,10 +110,11 @@
 }
 
 .stories-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:30px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:40px;
+  max-width:1400px;
+  margin:auto;
 }
 
 .story-card{
@@ -144,6 +145,14 @@
   margin-top:10px;
   color:gray;
   font-size:15px;
+}
+
+@media (max-width:768px){
+
+  .story-card{
+    width:100%;
+  }
+
 }
 /* FLECHAS */
 
