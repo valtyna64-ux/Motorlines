@@ -173,26 +173,6 @@
   }
 
 }
-@media (max-width:768px){
-
-  .stories-container{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .story-card{
-    width:100%;
-  }
-
-@media (max-width:768px){
-
-  .stories-container{
-    grid-template-columns:1fr !important;
-    background:red;
-  }
-
-}
-
 }
 /* FLECHAS */
 
