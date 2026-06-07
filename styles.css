@@ -134,7 +134,14 @@
   .story-card{
     width:100%;
   }
+@media (max-width:768px){
 
+  .stories-container{
+    grid-template-columns:1fr !important;
+    background:red;
+  }
+
+}
 }
 .story-card:hover{
   transform:translateY(-5px);
