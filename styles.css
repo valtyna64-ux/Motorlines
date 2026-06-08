@@ -1234,7 +1234,7 @@
     max-width: 90%;
     margin: auto;
     display: block;
-    transform: none;
+    transform: translateX(-50px) translateY(60px);
 }
 
 }
