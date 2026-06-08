@@ -1223,22 +1223,21 @@
     font-size: 18px;
   }
 
-  .hero-image{
+.hero-image{
     width: 100%;
-    margin-top: 25px;
-    transform: none; /* elimina el desplazamiento */
+    margin-top: -20px; /* ajusta este valor */
     order: 3;
-  }
+}
 
-  .hero-image img{
-    width: 400px;
-    max-width: 100%;
+.hero-image img{
+    width: 280px;
+    max-width: 90%;
     margin: auto;
     display: block;
     transform: none;
-  }
+}
 
 }
 
-  }
+  
 
