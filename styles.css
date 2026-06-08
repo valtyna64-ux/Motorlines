@@ -1186,19 +1186,22 @@
     border-radius:30px;
     font-weight:bold;
 }
+.hero-image{
+    width:100%;
+    order:2;
+    margin-top:200px;
+    transform: translateX(100px);
+}
+
+@media (max-width: 768px){
 
   .hero-image{
-    width:100%;
-    order:2; /* imagen debajo */
-    margin-top:200px;
+    width: 100%;
+    margin-top: 25px;
     transform: none;
+    order: 3;
   }
 
-  .hero-image img{
-    width:480px;
-    max-width:90%;
-    height:auto;
-    
 }
 
 /* 📱 HERO MOBILE */
