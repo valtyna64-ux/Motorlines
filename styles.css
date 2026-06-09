@@ -927,9 +927,9 @@
 }
 
 /* NOTICIA PRINCIPAL */
-.main-news {
+/*.main-news {
   flex: 2;
-}
+}*/
 
 .main-news h1 {
   font-size: 55px;
@@ -1077,11 +1077,15 @@
     line-height: 1.7;
   }
 
-  .article-content img,
+ /* .article-content img,
   .main-news img{
     width: 100%;
     height: auto;
-  }
+  }*/
+.article-content img{
+  width:100%;
+  height:auto;
+}
 
   .sidebar h3{
     font-size: 26px;
