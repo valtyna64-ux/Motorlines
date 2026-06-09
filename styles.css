@@ -324,31 +324,6 @@
 }
 
 
-/* ===================== */
-/* 📱 RESPONSIVE */ movil noticias
-/* ===================== */
-
-@media (max-width: 768px) {
-
-  .news-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-
-  .main-news{
-    grid-row:auto;
-  }
-
-  .main-news img{
-    height:250px;
-  }
-
-  .side-news img{
-    height:180px;
-  }
-
-}
 
 
 
