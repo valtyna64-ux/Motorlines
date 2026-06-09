@@ -1045,9 +1045,9 @@
     padding: 40px 20px;
   }
 
-  .news-grid{
+  /*.news-grid{
     grid-template-columns: 1fr;
-  }
+  }*/
 
   .main-news h1,
   .article-content h1{
