@@ -298,18 +298,14 @@
   scrollbar-width: none;
   justify-content: center;
 }
-.merch-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-@media (max-width:768px){
+.merch-wrapper { display: flex; align-items: center; justify-content: center; position: relative; }
 
-  .shop-card{
-    min-width: 100%;
-  }
 
+  @media (max-width: 768px){
+
+.merch-wrapper{ justify-content: flex-start; }
+
+.merch-slider{ padding-left: 10px; }
 }
 
 
