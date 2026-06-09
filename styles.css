@@ -1245,6 +1245,36 @@
     transform: translateX(-50px) translateY(60px);
 }
 
+/*intento arreglo movil ultimas noticias */
+
+@media (max-width: 768px){
+
+  .news-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:20px !important;
+  }
+
+  .main-news{
+    grid-row:auto !important;
+  }
+
+  .main-news img{
+    width:100% !important;
+    height:250px !important;
+    object-fit:cover;
+  }
+
+  .side-news{
+    width:100% !important;
+  }
+
+  .side-news img{
+    width:100% !important;
+    height:180px !important;
+    object-fit:cover;
+  }
+
 }
 
   
