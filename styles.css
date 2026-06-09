@@ -78,20 +78,7 @@
   padding:15px;
   border-radius:8px;
 }
-.news-grid{
-  display:grid !important;
-  grid-template-columns:2fr 1fr 1fr !important;
-  gap:20px !important;
-  border:3px solid red;
-}
 
-.main-news{
-  border:3px solid blue;
-}
-
-.side-news{
-  border:3px solid green;
-}
 /* NOTICIAS PEQUEÑAS */
 .side-news {
   background: white;
