@@ -298,14 +298,19 @@
   scrollbar-width: none;
   justify-content: center;
 }
-.merch-wrapper { display: flex; align-items: center; justify-content: center; position: relative; }
+.merch-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
+/* justificar centro monitor*/
+@media (min-width: 769px){
 
-  @media (max-width: 768px){
+  .merch-wrapper{
+    justify-content:center;
+  }
 
-.merch-wrapper{ justify-content: flex-start; }
-
-.merch-slider{ padding-left: 10px; }
 }
 
 
