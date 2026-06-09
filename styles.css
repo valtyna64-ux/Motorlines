@@ -304,13 +304,10 @@
 /* 📱 RESPONSIVE */
 /* ===================== */
 
-
-
 @media (max-width: 768px) {
 
   .news-grid{
     display:grid;
-    grid-template-columns:1fr !important;
     gap:20px;
   }
 
@@ -325,8 +322,10 @@
   .side-news img{
     height:180px;
   }
-grid-template-columns:1fr !important;
+
 }
+
+
 
 
  /* =========================
