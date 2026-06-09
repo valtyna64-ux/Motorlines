@@ -320,21 +320,28 @@
 
 
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-  .news-grid {
-    grid-template-columns: 1fr;
+  .news-grid{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:20px;
   }
 
-  .main-news {
-    grid-column: span 1;
+  .main-news{
+    grid-row:auto;
   }
 
-  .merch-grid {
-    grid-template-columns: 1fr;
+  .main-news img{
+    height:250px;
   }
 
+  .side-news img{
+    height:180px;
+  }
+grid-template-columns:1fr !important;
 }
+
 
  /* =========================
    FOOTER REDES SOCIALES
