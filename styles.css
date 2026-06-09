@@ -290,6 +290,14 @@
 .merch-right {
   margin-left: 15px;
 }
+.merch-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  justify-content: center;
+}
 
 @media (max-width:768px){
 
