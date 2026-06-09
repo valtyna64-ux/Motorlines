@@ -311,6 +311,16 @@
     justify-content:center;
   }
 
+@media (max-width: 768px){
+
+  .merch-wrapper{
+    justify-content:flex-start;
+  }
+
+  .merch-slider{
+    width:100%;
+  }
+
 }
 
 
