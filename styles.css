@@ -1272,7 +1272,8 @@
   
 
 /*derechos fotos articulos */
-  .foto-articulo{
+
+.foto-articulo{
   max-width:700px;
   margin:30px auto;
 }
@@ -1283,24 +1284,22 @@
 }
 
 .credito-foto{
-  background:#1f3a56;
-  color:#fff;
-  font-size:11px;
-  font-weight:bold;
+  background:#0d2c54;
+  color:white;
+  font-size:10px;
+  font-weight:700;
   text-transform:uppercase;
   padding:4px 8px;
   display:inline-block;
-  margin-top:-4px;
 }
 
 .descripcion-foto{
-  font-size:14px;
-  color:#555;
-  border-left:2px solid #bbb;
+  font-size:13px;
+  color:#666;
+  border-left:1px solid #999;
   padding-left:10px;
-  margin-top:8px;
-  line-height:1.5;
-}
+  margin-top:6px;
+  line-height:1.4;
 }
 
   
