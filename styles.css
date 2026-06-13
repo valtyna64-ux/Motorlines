@@ -1381,6 +1381,10 @@
   gap:50px;
   align-items:start;
 }
+.photo-side{
+  border-left:1px solid #ddd;
+  padding-left:40px;
+}
 
 /* 📱 FOTO DE LA SEMANA - MÓVIL */
 
