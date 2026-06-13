@@ -1308,5 +1308,100 @@
   display:inline-block !important;
 }
 
+/* FOTO DE LA SEMANA */
+
+.photo-week{
+  background:#f8f8f8;
+  padding:60px 40px;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.photo-content{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:40px;
+}
+
+.photo-main{
+  border-right:1px solid #bdbdbd;
+  padding-right:40px;
+}
+
+.photo-main h2{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  margin-bottom:25px;
+  color:#111;
+}
+
+.photo-main img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  display:block;
+}
+
+.photo-info{
+  margin-top:20px;
+  border-bottom:1px solid #bdbdbd;
+  padding-bottom:15px;
+}
+
+.photo-info h3{
+  font-family:'Playfair Display', serif;
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.photo-info p{
+  font-size:18px;
+  color:#555;
+}
+
+/* COLUMNA DERECHA */
+
+.photo-side h3{
+  font-family:'Playfair Display', serif;
+  font-size:34px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.side-box{
+  border-top:1px solid #bdbdbd;
+  border-bottom:1px solid #bdbdbd;
+  padding:40px 10px;
+  text-align:center;
+}
+
+.side-box h4{
+  font-family:'Playfair Display', serif;
+  font-size:34px;
+  line-height:1.3;
+  margin-bottom:25px;
+}
+
+.side-box p{
+  font-size:20px;
+  line-height:1.7;
+  color:#444;
+  margin-bottom:40px;
+}
+
+.participa-btn{
+  text-decoration:none;
+  color:#111;
+  font-size:22px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.participa-btn:hover{
+  letter-spacing:2px;
+}
+
   
 
