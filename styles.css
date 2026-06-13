@@ -1388,5 +1388,17 @@
   .photo-main img{
     height:250px;
   }
+.photo-content{
+  border: 5px solid red !important;
+  display:grid !important;
+  grid-template-columns:2fr 1fr !important;
+}
 
+  .photo-main{
+  background: yellow !important;
+}
+
+.photo-side{
+  background: lightblue !important;
+}
 }
