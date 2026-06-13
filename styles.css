@@ -1373,7 +1373,11 @@
   color:black;
   font-weight:bold;
 }
-
+.photo-side{
+  border-left:1px solid #ddd;
+  padding-left:40px;
+  margin-top:60px;
+}
 
 /* 📱 FOTO DE LA SEMANA - MÓVIL */
 
