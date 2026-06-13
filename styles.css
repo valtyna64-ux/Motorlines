@@ -1385,6 +1385,11 @@
   border-left:1px solid #ddd;
   padding-left:40px;
 }
+.photo-side h3{
+  font-size:28px;
+  margin-top:0;
+  margin-bottom:25px;
+}
 
 /* 📱 FOTO DE LA SEMANA - MÓVIL */
 
