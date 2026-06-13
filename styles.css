@@ -1374,31 +1374,4 @@
   font-weight:bold;
 }
 
-@media (max-width:768px){
 
-  .photo-content{
-    grid-template-columns:1fr;
-  }
-
-  .photo-side{
-    border-left:none;
-    padding-left:0;
-  }
-
-  .photo-main img{
-    height:250px;
-  }
-.photo-content{
-  border: 5px solid red !important;
-  display:grid !important;
-  grid-template-columns:2fr 1fr !important;
-}
-
-  .photo-main{
-  background: yellow !important;
-}
-
-.photo-side{
-  background: lightblue !important;
-}
-}
