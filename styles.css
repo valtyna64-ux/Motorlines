@@ -955,7 +955,7 @@
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
-   border-left:5px solid #0d2c54;
+   border-left:5px solid#5DADE2;
 }
 
 .news-card:hover {
