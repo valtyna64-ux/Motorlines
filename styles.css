@@ -1431,7 +1431,9 @@
     font-size:16px;
     line-height:1.6;
   }
-
+.news-card{
+  border-left:5px solid #0d2c54;
+}
 }
 
 
