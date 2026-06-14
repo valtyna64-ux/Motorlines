@@ -955,6 +955,7 @@
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
+   border-left:5px solid #0d2c54;
 }
 
 .news-card:hover {
@@ -972,6 +973,8 @@
   color: gray;
   font-size: 14px;
 }
+
+
 
 .sidebar-art{
   margin-top: 9px;
@@ -1431,9 +1434,7 @@
     font-size:16px;
     line-height:1.6;
   }
-.news-card{
-  border-left:5px solid #0d2c54;
-}
+
 }
 
 
