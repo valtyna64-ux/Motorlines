@@ -37,7 +37,7 @@
 
 /* HOVER */
 .menu li a:hover {
-  color:#80BFFF;
+  color:#blue;
    height:120px;
 }
 
@@ -1387,7 +1387,7 @@
 }
 
 .participa-btn:hover{
-  background:#000;
+  background:blue;
   color:#fff;
 }
 .photo-content{
