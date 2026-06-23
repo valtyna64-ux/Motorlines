@@ -4,7 +4,7 @@
 /* ===================== */
 
 .navbar {
-  background: #0b0b0b;;
+  background: transparent;;
   color: red;
   display: flex;
   justify-content: space-between;
@@ -1145,7 +1145,7 @@
     justify-content:space-between;
     padding:8px 8%;
     min-height:9vh;
-    background:#0b0b0b;
+    background:#FFFFFF;
 }
 
 .hero-text{
