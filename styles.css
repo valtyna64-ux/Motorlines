@@ -1449,3 +1449,23 @@
 }
 
 
+/* rigel animacion */
+.rigel-section{
+    text-align:center;
+    margin:40px auto;
+    max-width:600px;
+    padding:20px;
+}
+
+.rigel-video{
+    display:block;
+    width:100%;
+    max-width:400px;
+    height: 550px;;
+    transform: translateX(-40px);
+    
+    filter: drop-shadow(0 0 15px rgba(255,255,180,.35));
+}
+
+
+
