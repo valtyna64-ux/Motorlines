@@ -1498,28 +1498,20 @@
 /* video rigel */
 .rigel-historias{
     display:flex;
-    justify-content:center;
+    flex-direction:column;   /* Texto arriba, video abajo */
     align-items:center;
-    margin-bottom:20px;
-}
-.rigel-video-small{
-    width:250px;
-    height:auto;
-    display:block;
-}
-
-.rigel-historias{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
     margin-bottom:20px;
 }
 
 .rigel-texto{
-    margin:0;
+    margin-bottom:8px;
     font-family:'Playfair Display', serif;
     font-size:20px;
     font-weight:bold;
     color:#111;
+}
+
+.rigel-video-small{
+    width:100px;
+    height:auto;
 }
