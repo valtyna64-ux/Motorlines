@@ -1460,7 +1460,7 @@
 .rigel-video{
     display:block;
     width:100%;
-    max-width:400px;
+    max-width:350px;
     height: 550px;;
     transform: translateX(-40px);
     
