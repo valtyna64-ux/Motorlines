@@ -1240,16 +1240,17 @@
 .hero-image{
     width:100%;
     order:2;
-    margin-top:200px;
-    margin-left:90px; /* mueve a la derecha osito */
-}
-.hero-image img{
-    width:500px;
-    max-width:90%;
-    height:auto;
-    transform: translateX(80px)translateY(-50px);;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
 }
 
+.hero-image img{
+    width:450px;
+    max-width:90%;
+    height:auto;
+}
 
 /* 📱 HERO MOBILE */
 
