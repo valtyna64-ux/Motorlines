@@ -1507,3 +1507,19 @@
     height:auto;
     display:block;
 }
+
+.rigel-historias{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.rigel-texto{
+    margin:0;
+    font-family:'Playfair Display', serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#111;
+}
