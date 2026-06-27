@@ -1493,3 +1493,18 @@
   }
 
 }
+
+
+/* video rigel */
+.rigel-historias{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.rigel-video-small{
+    width:140px;
+    height:auto;
+    display:block;
+}
