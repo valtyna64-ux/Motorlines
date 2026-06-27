@@ -3,13 +3,22 @@
 /* 🖤 NAVBAR */
 /* ===================== */
 
-.navbar {
-  background: transparent;;
-  color: blue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+.navbar{
+    display:grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items:start;
+    padding:20px 30px;
+}
+.logo-star{
+    width:34px;
+    height:34px;
+    justify-self:start;
+    margin-top:5px;
+}
+.language-switch{
+    justify-self:end;
+    display:flex;
+    gap:8px;
 }
 
 /* LOGO */
@@ -38,8 +47,9 @@
 /* HOVER */
 .menu li a:hover {
   color:#5DADE2;
-   height:120px;
+   height:120 px;
 }
+
 
 .news-grid{
   display:grid;
@@ -79,6 +89,41 @@
   padding:15px;
   border-radius:8px;
 }
+
+.logo-star{
+    width:36px;
+    height:36px;
+}
+
+.nav-center{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.language-switch{
+    width:120px;
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+}
+
+.language-switch a{
+    text-decoration:none;
+    color:blue;
+    border:1px solid blue;
+    padding:4px 8px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.language-switch a.active{
+    background:blue;
+    color:white;
+}
+
+
 
 /* NOTICIAS PEQUEÑAS */
 .side-news {
@@ -175,7 +220,7 @@
   }
 
 }
-}
+
 /* FLECHAS */
 
 .arrow {
@@ -1093,7 +1138,7 @@
     font-size: 17px;
   }
 
-   }
+   
 /* 📱 politicas*/
 .footer {
   text-align: center;
@@ -1447,24 +1492,3 @@
   }
 
 }
-
-
-/* rigel animacion */
-.rigel-section{
-    text-align:center;
-    margin:40px auto;
-    max-width:600px;
-    padding:20px;
-}
-
-.rigel-video{
-    display:block;
-    width:100%;
-    max-width:300px;
-    height: 550px;;
-    transform: translateX(-40px);
-  
-}
-
-
-
