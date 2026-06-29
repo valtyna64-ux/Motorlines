@@ -1238,14 +1238,20 @@
     font-weight:bold;
 }
 
-
-/* prueba imagen inicio  */
 .hero-image{
-    border: 2px solid red;
+    width:100%;
+    order:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
 }
 
 .hero-image img{
-    transform: translateX(100px);
+    width:400px;
+    max-width:90%;
+    height:auto;
+    transform: translateX(10px); /* Mueve 30px a la derecha */
 }
 
 /* 📱 HERO MOBILE */
@@ -1283,7 +1289,7 @@
     max-width: 90%;
     margin: auto;
     display: block;
-    transform: translateX(-50px) translateY(60px);
+    transform: translateX(20px) translateY(60px);
 }
 }
 /*intento arreglo movil ultimas noticias */
