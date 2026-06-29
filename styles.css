@@ -1282,6 +1282,7 @@
     width: 100%;
     margin-top: -20px; /* ajusta este valor */
     order: 3;
+    z-index: 1;
 }
 
 .hero-image img{
@@ -1289,7 +1290,8 @@
     max-width: 90%;
     margin: auto;
     display: block;
-    transform: translateX(20px) translateY(60px);
+    transform: translateX(10px) translateY(60px);
+    
 }
 }
 /*intento arreglo movil ultimas noticias */
