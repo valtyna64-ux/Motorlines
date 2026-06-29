@@ -1237,20 +1237,15 @@
     border-radius:30px;
     font-weight:bold;
 }
+
+
+/* prueba imagen inicio  */
 .hero-image{
-    width:100%;
-    order:2;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:40px;
+    border: 2px solid red;
 }
 
 .hero-image img{
-    width:400px;
-    max-width:90%;
-    height:auto;
-    transform: translateX(10px); /* Mueve 30px a la derecha */
+    transform: translateX(100px);
 }
 
 /* 📱 HERO MOBILE */
