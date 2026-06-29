@@ -1250,7 +1250,7 @@
     width:400px;
     max-width:90%;
     height:auto;
-    transform: translateX(30px); /* Mueve 30px a la derecha */
+    transform: translateX(10px); /* Mueve 30px a la derecha */
 }
 
 /* 📱 HERO MOBILE */
