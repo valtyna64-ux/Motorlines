@@ -1290,7 +1290,7 @@
     max-width: 90%;
     margin: auto;
     display: block;
-    transform: translateX(10px) translateY(60px);
+ /* transform: translateX(10px) translateY(60px); */
     
 }
 }
