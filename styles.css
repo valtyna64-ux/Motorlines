@@ -195,7 +195,6 @@
 }
 
 /* 📱 MÓVIL */
-
 @media screen and (max-width:768px){
 
   .stories{
@@ -203,7 +202,7 @@
   }
 
   .stories-container{
-    grid-template-columns:1fr !important;
+    grid-template-columns:1fr;
     gap:25px;
   }
 
@@ -219,6 +218,18 @@
     font-size:20px;
   }
 
+  /* Hace que el botón pase debajo */
+  .story-content{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .btn-leer{
+    width:100%;
+    text-align:center;
+  }
 }
 
 /* FLECHAS */
