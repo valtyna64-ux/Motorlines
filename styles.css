@@ -1603,6 +1603,10 @@
     line-height:1.6;
     font-size:15px;
 }
+.sketch-garage{
+    border:5px solid red !important;
+    background:yellow !important;
+}
 
 /* sketch garage responsive */
 
@@ -1632,5 +1636,6 @@
     }
 
 }
+
 
 
