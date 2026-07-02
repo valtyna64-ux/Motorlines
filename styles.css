@@ -1291,22 +1291,22 @@
     font-size: 18px;
   }
 
+
 .hero-image{
-    width: 100%;
-    margin-top: -20px; /* ajusta este valor */
-    order: 3;
-    z-index: 1;
+    width:100%;
+    order:2;
+    margin-top:200px;
+    margin-left:90px; /* mueve a la derecha osito */
+}
+.hero-image img{
+    width:500px;
+    max-width:90%;
+    height:auto;
+    transform: translateX(80px)translateY(-50px);;
+
+}
 }
 
-.hero-image img{
-    width: 280px;
-    max-width: 90%;
-    margin: auto;
-    display: block;
-  transform: translateX(10px) translateY(60px); 
-    
-}
-}
 /*intento arreglo movil ultimas noticias */
 
 @media (max-width: 768px){
