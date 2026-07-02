@@ -1530,7 +1530,114 @@
 
 }
 
+/* ===================== */
+/* SKETCH GARAGE */
+/* ===================== */
 
+.art-gallery{
+    padding:80px 50px;
+    background:#f8f8f8;
+}
+
+.art-gallery h2{
+    font-size:42px;
+    font-family:'Playfair Display', serif;
+    color:#111;
+    text-align:center;
+    margin-bottom:12px;
+}
+
+.art-subtitle{
+    font-size:18px;
+    color:#666;
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 45px;
+    line-height:1.7;
+}
+
+.art-wrapper{
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+
+.art-slider{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    padding-bottom:15px;
+}
+
+.art-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.art-card{
+    min-width:320px;
+    flex-shrink:0;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.art-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.art-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+}
+
+.art-card h4{
+    margin:18px;
+    font-size:20px;
+    color:#111;
+}
+
+.art-card p{
+    margin:0 18px 20px;
+    color:#666;
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width:768px){
+
+    .art-gallery{
+        padding:60px 20px;
+    }
+
+    .art-gallery h2{
+        font-size:32px;
+    }
+
+    .art-subtitle{
+        font-size:16px;
+        margin-bottom:30px;
+    }
+
+    .art-slider{
+        gap:18px;
+    }
+
+    .art-card{
+        min-width:250px;
+    }
+
+}
 
 
 
