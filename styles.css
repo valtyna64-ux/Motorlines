@@ -1201,7 +1201,7 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:2px 8%;
+    padding:4px 8%;
     min-height:9vh;
     background:#FFFFFF;
 }
