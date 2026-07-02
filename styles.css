@@ -1267,45 +1267,45 @@
 
 /* 📱 HERO MOBILE */
 
-@media (max-width: 768px){
+/* 📱 HERO MOBILE */ 
+
+@media (max-width:768px){
 
   .hero{
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
+    flex-direction:column;
+    text-align:center;
+    padding:30px 20px;
   }
 
   .hero-text{
-    width: 100%;
+    width:100%;
   }
 
   .hero-text h1{
-    font-size: 55px;
-    line-height: 1.05;
+    font-size:55px;
+    line-height:1.05;
   }
 
   .hero-text p{
-    max-width: 100%;
-    font-size: 18px;
+    max-width:100%;
+    font-size:18px;
   }
 
-/*revisar error rigel*/
-    .hero-image{
-        width:100%;
-        display:flex;
-        justify-content:center;
-        margin-top:10px;
-        order:3;
-    }
+  .hero-image{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    order:3;
+  }
 
-    .hero-image img{
-        width:90px;
-        max-width:100%;
-        height:auto;
-        transform:none; /* elimina el desplazamiento en móvil */
-    }
+  /* ↓ ESTE ES EL QUE CAMBIA EL TAMAÑO DE RIGEL */
+  .rigel-video{
+    width:120px;      /* prueba 100px, 120px o 140px */
+    height:auto;
+  }
+
 }
-
 /*intento arreglo movil ultimas noticias */
 
 @media (max-width: 768px){
