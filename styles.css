@@ -1290,19 +1290,20 @@
   }
 
 /*revisar error rigel*/
-.hero-image{
-    width: 100%;
-    margin-top: -20px; /* ajusta este valor */
-    order: 3;
-}
+    .hero-image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+        order:3;
+    }
 
-.hero-image img{
-    width: 280px;
-    max-width: 90%;
-    margin: auto;
-    display: block;
-    transform: translateX(-50px) translateY(60px);
-}
+    .hero-image img{
+        width:180px;
+        max-width:100%;
+        height:auto;
+        transform:none; /* elimina el desplazamiento en móvil */
+    }
 }
 
 /*intento arreglo movil ultimas noticias */
