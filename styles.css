@@ -1299,7 +1299,7 @@
     }
 
     .hero-image img{
-        width:180px;
+        width:140px;
         max-width:100%;
         height:auto;
         transform:none; /* elimina el desplazamiento en móvil */
