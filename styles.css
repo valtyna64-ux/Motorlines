@@ -1251,20 +1251,28 @@
     font-weight:bold;
 }
 
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
 .hero-image{
-    width:100%;
-    order:2;
+
+    width:45%;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:40px;
+
 }
 
-.hero-image img{
-    width:400px;
-    max-width:90%;
+.rigel-video{
+
+    width:380px;
+    max-width:100%;
     height:auto;
-    transform: translateX(10px); /* Mueve 30px a la derecha */
+
 }
 
 /* 📱 HERO MOBILE */
