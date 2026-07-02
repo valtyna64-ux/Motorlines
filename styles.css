@@ -1510,34 +1510,7 @@
   }
 
 }
-/*rigel*/
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
-}
-.rigel-hero{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-}
 
-.rigel-texto{
-    margin-bottom:12px;
-    font-family:'Playfair Display', serif;
-    font-size:22px;
-    font-weight:bold;
-    text-align:center;
-    color:#111;
-}
-
-.rigel-video-small{
-    width:280px;
-    height:auto;
-}
 
 /*efecto inicio */
 .hero{
