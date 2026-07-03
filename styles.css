@@ -1301,7 +1301,7 @@
 
   /* ↓ ESTE ES EL QUE CAMBIA EL TAMAÑO DE RIGEL */
   .rigel-video{
-    width:110px;      /* prueba 100px, 120px o 140px */
+    width:130px;      /* prueba 100px, 120px o 140px */
     height:auto;
   }
 
