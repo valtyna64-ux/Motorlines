@@ -1294,14 +1294,14 @@
   .hero-image{
     width:100%;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start; 
     margin-top:10px;
     order:3;
   }
 
   /* ↓ ESTE ES EL QUE CAMBIA EL TAMAÑO DE RIGEL */
   .rigel-video{
-    width:60px;      /* prueba 100px, 120px o 140px */
+    width:90px;      /* prueba 100px, 120px o 140px */
     height:auto;
   }
 
