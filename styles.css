@@ -165,20 +165,21 @@
 }
 
 .story-card{
-  width:100%;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.story-card:hover{
-  transform:translateY(-5px);
+    max-width:360px;
+    margin:auto;
 }
 
 .story-card img{
-  width:100%;
-  height:260px;
-  object-fit:cover;
-  display:block;
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    transition:.3s;
+}
+
+.story-card:hover img{
+    transform:translateY(-8px);
 }
 
 .story-card h3{
