@@ -159,17 +159,18 @@
     display:grid;
     grid-template-columns:repeat(2, 320px);
     justify-content:center;
-    gap:40px;
+     gap:70px 50px; 
 }
 
 .story-card{
     width:320px;
-    margin:0;
+    transition:transform .3s ease, box-shadow .3s ease;
+    cursor:pointer;
 }
 
-.story-card img{
-    width:100%;
-    display:block;
+.story-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 /* 📱 MÓVIL */
