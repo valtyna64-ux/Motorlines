@@ -189,22 +189,26 @@
 
   .stories-container{
     grid-template-columns:1fr;
-    gap:25px;
+    gap:30px;
   }
 
   .story-card{
-    width:100%;
+    width:85%;
+    max-width:320px;
+    margin:0 auto;
   }
 
   .story-card img{
-    height:220px;
+    width:100%;
+    height:auto;      /* Mantiene la proporción */
+    display:block;
+    border-radius:15px;
   }
 
   .story-card h3{
     font-size:20px;
   }
 
-  /* Hace que el botón pase debajo */
   .story-content{
     display:flex;
     flex-direction:column;
