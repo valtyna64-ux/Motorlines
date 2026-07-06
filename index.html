@@ -65,21 +65,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   <i class="fab fa-whatsapp"></i>
 
 </a>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 <body>
 
-  <header class="navbar">
-  <div class="logo">ML</div>
 
-  <nav>
-    <ul class="menu">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#historias">Historias</a></li>
-    <li><a href="#noticias">Noticias</a></li>
-    <li><a href="#merch">Merch</a></li>
-    </ul>
-  </nav>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Motorlines">
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Menú -->
+        <ul class="nav-menu" id="nav-menu">
+
+            <li><a href="#inicio">Inicio</a></li>
+
+            <li><a href="#historias">Historias</a></li>
+
+            <li><a href="#noticias">Noticias</a></li>
+
+            <li><a href="#merch">Merch</a></li>
+
+            <li class="language">
+                <a href="index.html">ESP</a>
+                <span>|</span>
+                <a href="index-en.html">ENG</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
 </header>
+
 
 <section id="inicio" class="hero reveal">
 
@@ -407,3 +434,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   </div>
 
 </footer>
+
+<script>
+const menu = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+menu.addEventListener("click", function () {
+    nav.classList.toggle("active");
+});
+</script>
+  
+</body>
+</html>
