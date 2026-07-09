@@ -1818,14 +1818,4 @@
 }
 
 
-/* ===========================
-efecto hover secciones 
-=========================== */
 
-.section-hover{
-    transition:transform .4s ease;
-}
-
-.section-hover:hover{
-    transform:scale(1.015);
-}
