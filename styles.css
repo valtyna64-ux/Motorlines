@@ -977,7 +977,56 @@
 
 }
 
-/* WHATSAPP FLOAT */
+
+
+/* BOTÓN MENSAJE */
+
+.whatsapp-float{
+
+  position: fixed;
+
+  width: 60px;
+
+  height: 60px;
+
+  bottom: 25px;
+
+  right: 25px;
+
+  background: #111;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+
+  transition: 0.3s ease;
+
+  z-index: 99999;
+}
+
+.whatsapp-float:hover{
+
+  transform: scale(1.12);
+
+  background:#222;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+
+}
+
+/* WHATSAPP FLOAT 
 
 .whatsapp-float{
 
@@ -1010,7 +1059,7 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 
   transition: 0.3s ease;
-/* prueba boton  */
+ prueba boton  
   z-index: 99999; 
 }
 
@@ -1020,7 +1069,7 @@
 
   box-shadow: 0 8px 25px rgba(37,211,102,0.6);
 
-}
+}*/
 
 /* EFECTO HOVER NOTICIAS */
 
@@ -1769,7 +1818,9 @@
 }
 
 
-
+/* ===========================
+efecto hover secciones 
+=========================== */
 
 .section-hover{
     transition:transform .4s ease;
