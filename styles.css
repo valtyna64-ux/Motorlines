@@ -1822,51 +1822,59 @@
 ======================= */
 
 .pit-wall{
+
     width:100%;
     background:#111;
     color:#fff;
     overflow:hidden;
     white-space:nowrap;
 
-    /* Borde azul */
-    border-top:2px solid #2d7ff9;
-    border-bottom:2px solid #2d7ff9;
 }
 
 .pit-track{
+
     display:flex;
-    width:max-content;
-    animation:scrollPit 30s linear infinite;
+
 }
 
 .pit-text{
-    padding:14px 120px 14px 0; /* Más espacio hacia la derecha */
-    font-size:17px;
+
+    display:inline-block;
+
+    padding:14px 0;
+
+    font-size:16px;
+
+    animation: pitwall 30s linear infinite;
+
 }
 
 .pit-text strong{
 
-    /* PIT WALL en azul */
-    color:#2d7ff9;
+    color:#2f80ed;      /* Azul */
 
-    /* Más grande */
-    font-size:22px;
+    font-size:22px;     /* Más grande */
 
     font-weight:700;
 
-    margin-right:20px;
+    margin-right:30px;  /* Más separación */
 
     letter-spacing:1px;
+
 }
 
-@keyframes scrollPit{
+@keyframes pitwall{
 
     from{
-        transform:translateX(0);
+
+        transform:translateX(100%);
+
     }
 
     to{
-        transform:translateX(-50%);
+
+        transform:translateX(-100%);
+
     }
 
 }
