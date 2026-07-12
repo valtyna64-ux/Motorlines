@@ -1817,63 +1817,56 @@
     display:block;
 }
 
-
 /* =======================
       PIT WALL
 ======================= */
 
 .pit-wall{
-
     width:100%;
     background:#111;
     color:#fff;
     overflow:hidden;
     white-space:nowrap;
 
-    border-top:2px solid #d4af37;
-    border-bottom:2px solid #d4af37;
-
+    /* Borde azul */
+    border-top:2px solid #2d7ff9;
+    border-bottom:2px solid #2d7ff9;
 }
 
 .pit-track{
-
     display:flex;
-
+    width:max-content;
+    animation:scrollPit 30s linear infinite;
 }
 
 .pit-text{
-
-    display:inline-block;
-
-    padding:12px 0;
-
-    font-size:16px;
-
-    animation: pitwall 30s linear infinite;
-
+    padding:14px 120px 14px 0; /* Más espacio hacia la derecha */
+    font-size:17px;
 }
 
 .pit-text strong{
 
-    color:#d4af37;
+    /* PIT WALL en azul */
+    color:#2d7ff9;
 
-    margin-right:15px;
+    /* Más grande */
+    font-size:22px;
 
+    font-weight:700;
+
+    margin-right:20px;
+
+    letter-spacing:1px;
 }
 
-@keyframes pitwall{
+@keyframes scrollPit{
 
     from{
-
-        transform:translateX(100%);
-
+        transform:translateX(0);
     }
 
     to{
-
-        transform:translateX(-100%);
-
+        transform:translateX(-50%);
     }
 
 }
-
