@@ -1818,4 +1818,62 @@
 }
 
 
+/* =======================
+      PIT WALL
+======================= */
+
+.pit-wall{
+
+    width:100%;
+    background:#111;
+    color:#fff;
+    overflow:hidden;
+    white-space:nowrap;
+
+    border-top:2px solid #d4af37;
+    border-bottom:2px solid #d4af37;
+
+}
+
+.pit-track{
+
+    display:flex;
+
+}
+
+.pit-text{
+
+    display:inline-block;
+
+    padding:12px 0;
+
+    font-size:16px;
+
+    animation: pitwall 30s linear infinite;
+
+}
+
+.pit-text strong{
+
+    color:#d4af37;
+
+    margin-right:15px;
+
+}
+
+@keyframes pitwall{
+
+    from{
+
+        transform:translateX(100%);
+
+    }
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+}
 
