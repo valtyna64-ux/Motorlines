@@ -1196,11 +1196,16 @@
 
 
 @media (max-width:768px){
+/* ==========================
+   RESPONSIVE ARTÍCULOS
+========================== */
+
+@media (max-width:768px){
 
     .article-layout{
-        display:flex;
-        flex-direction:column;
-        padding:20px;
+        grid-template-columns:1fr;
+        padding:20px 15px;
+        gap:30px;
     }
 
     .article-content{
@@ -1209,7 +1214,15 @@
 
     .sidebar{
         width:100%;
-        margin-top:30px;
+    }
+
+    .article-content h1{
+        font-size:34px;
+    }
+
+    .article-content p{
+        font-size:16px;
+        line-height:1.7;
     }
 
 }
