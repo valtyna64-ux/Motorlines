@@ -1941,80 +1941,186 @@
 }
 
 
-
 /* ==========================
-      LA PRIMERA OBRA
+      MOTORLINES GALLERY
 ========================== */
 
-.first-artwork{
+.ml-gallery{
 
     max-width:1200px;
-    margin:100px auto;
-
+    margin:120px auto;
     padding:0 40px;
+
 }
 
-.section-header{
+/* Encabezado */
+
+.gallery-header{
 
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
+    margin-bottom:50px;
 
-    margin-bottom:25px;
-
-    border-bottom:2px solid #111;
-
-    padding-bottom:15px;
 }
 
-.section-header h2{
+.gallery-label{
+
+    display:block;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#666;
+    margin-bottom:10px;
+
+}
+
+.gallery-heading h2{
 
     font-family:'Playfair Display', serif;
-    font-size:46px;
+    font-size:60px;
+    font-weight:400;
+    color:#111;
+
 }
 
-.section-header span{
+/* Número */
+
+.gallery-year{
+
+    text-align:right;
+
+}
+
+.gallery-year span{
+
+    display:block;
+    font-size:48px;
+    font-weight:700;
+    color:#111;
+
+}
+
+.gallery-year small{
 
     color:#666;
     font-size:15px;
     letter-spacing:2px;
-    text-transform:uppercase;
+
 }
 
-.artwork-image img{
+/* Contenido */
 
-    width:100%;
-
-    height:480px;
-
-    object-fit:cover;
-
-    display:block;
-}
-
-.artwork-info{
+.gallery-content{
 
     display:grid;
+    grid-template-columns:0.9fr 1.4fr;
+    gap:80px;
+    align-items:center;
 
-    grid-template-columns:1fr 2fr;
-
-    gap:60px;
-
-    margin-top:35px;
 }
 
-.artwork-title h3{
+/* Texto */
+
+.gallery-text h3{
 
     font-family:'Playfair Display', serif;
-
     font-size:36px;
+    margin-bottom:25px;
+    color:#111;
+
 }
 
-.artwork-text p{
+.gallery-text p{
 
     font-size:18px;
-
     line-height:1.9;
-
     color:#555;
+    max-width:360px;
+
+}
+
+/* Imagen */
+
+.gallery-image img{
+
+    width:100%;
+    display:block;
+
+    border-radius:3px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.gallery-image img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    .ml-gallery{
+
+        padding:0 25px;
+
+    }
+
+    .gallery-header{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .gallery-year{
+
+        text-align:left;
+
+    }
+
+    .gallery-heading h2{
+
+        font-size:42px;
+
+    }
+
+    .gallery-content{
+
+        grid-template-columns:1fr;
+        gap:40px;
+
+    }
+
+    .gallery-text{
+
+        order:2;
+
+    }
+
+    .gallery-image{
+
+        order:1;
+
+    }
+
+    .gallery-text h3{
+
+        font-size:30px;
+
+    }
+
+    .gallery-text p{
+
+        max-width:100%;
+
+    }
+
 }
