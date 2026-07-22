@@ -1953,3 +1953,45 @@
 
 
 
+/* ==========================
+   RESPONSIVE articulos leer mas
+========================== */
+
+@media (max-width:768px){
+
+    .news-layout{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .main-news{
+        width:100%;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .main-news h1{
+        font-size:34px;
+    }
+
+    .sidebar h3{
+        font-size:26px;
+    }
+
+    .sidebar-card img{
+        height:180px;
+    }
+
+    .sidebar-card-content h3{
+        font-size:1.1rem;
+    }
+
+    .sidebar-card-content p{
+        font-size:.9rem;
+    }
+
+}
+
