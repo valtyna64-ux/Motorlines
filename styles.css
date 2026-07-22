@@ -1194,38 +1194,14 @@
    RESPONSIVE cuadros articulos leer mas
 ========================== */
 
-@@media (max-width:768px){
+@media (max-width:768px){
 
-    .article-layout{
-        grid-template-columns:1fr;
+    .sidebar-card-content h3{
+        font-size:1.1rem;
     }
 
-    .sidebar{
-        margin-top:25px;
-    }
-
-}
-
-    /* El artículo ocupa todo el ancho */
-    .article-content{
-        width:100%;
-    }
-
-    /* El sidebar baja debajo */
-    .sidebar{
-        width:100%;
-        margin:0;
-        padding:0;
-    }
-
-    /* Las tarjetas ocupan todo el ancho */
-    .sidebar-card{
-        width:100%;
-    }
-
-    /* Imagen un poco más alta */
-    .sidebar-card img{
-        height:180px;
+    .sidebar-card-content p{
+        font-size:.88rem;
     }
 
 }
