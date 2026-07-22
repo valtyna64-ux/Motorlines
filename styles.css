@@ -1946,11 +1946,9 @@
 ========================== */
 
 .ml-gallery{
-
-    max-width:1200px;
-    margin:120px auto;
-    padding:0 40px;
-
+    max-width:1100px;
+    margin:70px auto;
+    padding:0 30px;
 }
 
 /* Encabezado */
@@ -1960,7 +1958,7 @@
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    margin-bottom:50px;
+    margin-bottom:30px;
 
 }
 
@@ -1978,7 +1976,7 @@
 .gallery-heading h2{
 
     font-family:'Playfair Display', serif;
-    font-size:60px;
+    font-size:48px;
     font-weight:400;
     color:#111;
 
@@ -2010,48 +2008,40 @@
 }
 
 /* Contenido */
-
 .gallery-content{
 
     display:grid;
-    grid-template-columns:0.9fr 1.4fr;
-    gap:80px;
+
+    grid-template-columns:0.9fr 1.3fr;
+
+    gap:45px;
+
     align-items:center;
 
 }
+}
 
 /* Texto */
-
 .gallery-text h3{
 
-    font-family:'Playfair Display', serif;
-    font-size:36px;
-    margin-bottom:25px;
-    color:#111;
+    font-size:28px;
 
 }
 
 .gallery-text p{
 
-    font-size:18px;
-    line-height:1.9;
-    color:#555;
-    max-width:360px;
+    font-size:16px;
+    line-height:1.8;
 
+}
 }
 
 /* Imagen */
-
 .gallery-image img{
 
     width:100%;
-    display:block;
-
-    border-radius:3px;
-
-    box-shadow:0 18px 45px rgba(0,0,0,.15);
-
-    transition:.4s;
+    max-height:380px;
+    object-fit:cover;
 
 }
 
