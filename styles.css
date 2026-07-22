@@ -1190,6 +1190,42 @@
 
 
 
+/* ==========================
+   RESPONSIVE cuadros articulos leer mas
+========================== */
+
+@media (max-width: 768px){
+
+    /* El contenido pasa de dos columnas a una */
+    .article-layout{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    /* El artículo ocupa todo el ancho */
+    .article-content{
+        width:100%;
+    }
+
+    /* El sidebar baja debajo */
+    .sidebar{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    /* Las tarjetas ocupan todo el ancho */
+    .sidebar-card{
+        width:100%;
+    }
+
+    /* Imagen un poco más alta */
+    .sidebar-card img{
+        height:180px;
+    }
+
+}
 
 
 .sidebar-art{
