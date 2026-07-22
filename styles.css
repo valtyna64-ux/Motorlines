@@ -1972,3 +1972,11 @@
 
 }
 
+
+   @media (max-width:768px){
+
+    .article-layout{
+        display:block !important;
+    }
+
+}
