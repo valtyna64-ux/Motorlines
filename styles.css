@@ -1194,14 +1194,17 @@
    RESPONSIVE cuadros articulos leer mas
 ========================== */
 
-@media (max-width: 768px){
+@@media (max-width:768px){
 
-    /* El contenido pasa de dos columnas a una */
     .article-layout{
-        display:flex;
-        flex-direction:column;
-        gap:30px;
+        grid-template-columns:1fr;
     }
+
+    .sidebar{
+        margin-top:25px;
+    }
+
+}
 
     /* El artículo ocupa todo el ancho */
     .article-content{
