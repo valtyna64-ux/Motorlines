@@ -1984,6 +1984,8 @@
     font-size:38px;
     font-weight:400;
     color:#111;
+   margin-top:30px;
+
 
 }
 
@@ -2054,14 +2056,14 @@
     border-radius:4px;
 
     box-shadow:0 18px 40px rgba(0,0,0,.15);
-     transform: translateY(-40px);
+     transform: translateY(-50px);
 
 }
 
 
 .gallery-image img:hover{
 
-    transform:scale(1.02);
+    transform:scale(1.01);
 
 }
 
