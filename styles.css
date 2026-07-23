@@ -1949,6 +1949,8 @@
     max-width:1000px;
     margin:90px auto;
     padding:0 60px;
+    border-top:1px solid #d8d8d8;
+    border-bottom:1px solid #d8d8d8;
 
 }
 
@@ -1977,7 +1979,7 @@
 .gallery-heading h2{
 
     font-family:'Playfair Display', serif;
-    font-size:48px;
+    font-size:38px;
     font-weight:400;
     color:#111;
 
