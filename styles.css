@@ -2061,11 +2061,8 @@
 }
 
 
-.gallery-image img:hover{
 
-    transform:scale(1.01);
 
-}
 
 /* ==========================
       RESPONSIVE
@@ -2119,6 +2116,9 @@
     .gallery-image{
 
         order:1;
+         width:90%;
+        max-width:400px;
+        height:auto;
 
     }
 
