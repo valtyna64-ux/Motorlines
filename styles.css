@@ -2033,17 +2033,24 @@
     font-size:16px;
     line-height:1.8;
 
-}
+
 }
 
-/* Imagen */
 .gallery-image img{
 
-    width:40%;
-    max-height:60px;
-    object-fit:cover;
+    width:85%;
+    max-width:520px;
+    height:auto;
+
+    display:block;
+    margin:0 auto;
+
+    border-radius:4px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
 
 }
+
 
 .gallery-image img:hover{
 
