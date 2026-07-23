@@ -1945,7 +1945,11 @@
       MOTORLINES GALLERY
 ========================== */
 .ml-gallery{
-    margin:70px auto;
+
+    max-width:1000px;
+    margin:90px auto;
+    padding:0 60px;
+
 }
 
 /* Encabezado */
@@ -2005,17 +2009,18 @@
 }
 
 /* Contenido */
+
 .gallery-content{
 
     display:grid;
 
-    grid-template-columns:0.9fr 1.3fr;
+    grid-template-columns:0.8fr 1.2fr;
 
     gap:45px;
 
     align-items:center;
 
-}
+
 }
 
 /* Texto */
