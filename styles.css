@@ -2039,8 +2039,8 @@
 /* Imagen */
 .gallery-image img{
 
-    width:60%;
-    max-height:90px;
+    width:40%;
+    max-height:60px;
     object-fit:cover;
 
 }
