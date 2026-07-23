@@ -2079,11 +2079,17 @@
 
     }
 
-    .gallery-year{
+  .gallery-year span{
 
-        text-align:left;
+    font-size:44px;
 
-    }
+}
+
+.gallery-year small{
+
+    font-size:14px;
+
+}
 
     .gallery-heading h2{
 
