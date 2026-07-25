@@ -2147,51 +2147,66 @@
 
 
 
+
 /* ==========================
-      diseño frase articulos 
-
+      FRASE EDITORIAL
 ========================== */
-
 
 .editorial-quote{
 
-    margin-top:90px;   /* Baja la frase */
-    max-width:190px;
-    position:relative;
+    margin-top:140px;   /* Baja mucho más la sección */
+    max-width:220px;
 
 }
 
-.quote-mark{
+.quote-open{
 
-    font-size:60px;
-    line-height:0;
-    font-family: "Playfair Display", serif;
+    font-family:"Playfair Display", serif;
+    font-size:78px;
+    line-height:.7;
+    margin-bottom:12px;
     color:#111;
 
 }
 
 .editorial-quote p{
 
-    margin-top:-10px;
+    margin:0;
+
     font-family:"Playfair Display", serif;
     font-size:28px;
-    line-height:1;
+    line-height:1.05;
     font-weight:700;
     color:#111;
 
 }
 
+.quote-close{
+
+    font-family:"Playfair Display", serif;
+    font-size:78px;
+
+    line-height:.7;
+
+    text-align:right;
+
+    margin-top:18px;      /* baja la comilla */
+    margin-right:8px;     /* la acerca un poco */
+
+    color:#111;
+
+}
 
 .quote-author{
 
     display:block;
-    margin-top:18px;
+
+    margin-top:25px;
 
     font-family:"Inter", sans-serif;
     font-size:12px;
     letter-spacing:2px;
     text-transform:uppercase;
-
-    color:#666;
+    color:#777;
 
 }
