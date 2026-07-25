@@ -2117,13 +2117,16 @@
         order:2;
 
     }
-
-    .gallery-image{
-
+   .gallery-image{
         order:1;
-         width:40%;
-        max-width:400px;
+        width:75%;      /* Más grande */
+        max-width:320px;
         height:auto;
+        margin-top:30px;   /* Baja un poco la imagen */
+        margin-bottom:15px;
+    }
+
+}
 
     }
 
