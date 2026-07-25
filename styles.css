@@ -2119,10 +2119,10 @@
     }
    .gallery-image{
         order:1;
-        width:100%;      /* Más grande */
+        width:120%;      /* Más grande */
         max-width:320px;
         height:auto;
-        margin-top:50px;   /* Baja un poco la imagen */
+        margin-top:60px;   /* Baja un poco la imagen */
         margin-bottom:15px;
     }
 
