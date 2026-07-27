@@ -2119,7 +2119,7 @@
     }
    .gallery-image{
         order:1;
-        width:120%;      /* Más grande */
+        width:150%;      /* Más grande */
         max-width:320px;
         height:auto;
         margin-top:60px;   /* Baja un poco la imagen */
