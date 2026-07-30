@@ -69,50 +69,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const slider = document.querySelector(".stories-container");
+  document.addEventListener("DOMContentLoaded", () => {
 
-const cards = [...slider.children];
+    // Solo en escritorio
+    if (window.innerWidth <= 768) return;
 
-// duplicamos las tarjetas
-cards.forEach(card=>{
-    slider.appendChild(card.cloneNode(true));
-});
+    const slider = document.querySelector(".stories-container");
 
-let position = 0;
-let paused = false;
+    if (!slider) return;
 
-function animate(){
+    const cards = [...slider.children];
 
-    if(!paused){
+    // Duplicamos las tarjetas para crear el efecto infinito
+    cards.forEach(card => {
+        slider.appendChild(card.cloneNode(true));
+    });
 
-        position += 0.4;
+    let current = 0;
+    let paused = false;
 
-        const firstCardWidth = cards[0].offsetWidth + 30;
+    const cardWidth = cards[0].offsetWidth + 30; // 30 = gap del CSS
 
-        if(position >= firstCardWidth * cards.length){
+    slider.style.transition = "transform .8s ease";
 
-            position = 0;
+    function moveSlider() {
+
+        if (paused) return;
+
+        current++;
+
+        slider.style.transform = `translateX(-${current * cardWidth}px)`;
+
+        // Cuando llega al final de las originales
+        if (current === cards.length) {
+
+            setTimeout(() => {
+
+                slider.style.transition = "none";
+                slider.style.transform = "translateX(0)";
+                current = 0;
+
+                // Fuerza el reflow
+                slider.offsetHeight;
+
+                slider.style.transition = "transform .8s ease";
+
+            }, 800);
 
         }
 
-        slider.style.transform = `translateX(-${position}px)`;
-
     }
 
-    requestAnimationFrame(animate);
+    let interval = setInterval(moveSlider, 4000);
 
-}
+    slider.addEventListener("mouseenter", () => {
+        paused = true;
+    });
 
-animate();
-
-slider.addEventListener("mouseenter",()=>{
-
-    paused = true;
+    slider.addEventListener("mouseleave", () => {
+        paused = false;
+    });
 
 });
-
-slider.addEventListener("mouseleave",()=>{
-
-    paused = false;
 
 });
