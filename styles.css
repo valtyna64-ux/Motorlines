@@ -309,7 +309,13 @@
     border-radius:15px;
   }
 
+  .stories-wrapper{
+        overflow:visible;
+    }
+
+   
 }
+
 }
   .btn-leer{
     width:100%;
