@@ -276,54 +276,40 @@
 }
 
 /* 📱 MÓVIL */
+/* 📱 MÓVIL */
 @media screen and (max-width:768px){
 
   .stories{
     padding:10px;
   }
 
-  .stories-container{
+  .stories-wrapper{
+    overflow:visible;
+  }
 
-    display:grid;
+  .stories-container{
+    display:grid !important;
     grid-template-columns:1fr;
     gap:30px;
-
+    width:100%;
     transform:none !important;
-
   }
 
   .story-card{
-
     width:85%;
     max-width:320px;
     margin:0 auto;
-
+    flex:none;
   }
 
   .story-card img{
-
     width:100%;
     height:auto;
     display:block;
     border-radius:15px;
-
   }
 
-  .story-card h3{
-
-    font-size:20px;
-
-  }
-
-  .story-content{
-
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:15px;
-
-  }
-
+}
 }
   .btn-leer{
     width:100%;
