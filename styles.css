@@ -283,34 +283,48 @@
   }
 
   .stories-container{
+
+    display:grid;
     grid-template-columns:1fr;
     gap:30px;
+
+    transform:none !important;
+
   }
 
   .story-card{
+
     width:85%;
     max-width:320px;
     margin:0 auto;
+
   }
 
   .story-card img{
+
     width:100%;
-    height:auto;      /* Mantiene la proporción */
+    height:auto;
     display:block;
     border-radius:15px;
+
   }
 
   .story-card h3{
+
     font-size:20px;
+
   }
 
   .story-content{
+
     display:flex;
     flex-direction:column;
     align-items:flex-start;
     gap:15px;
+
   }
 
+}
   .btn-leer{
     width:100%;
     text-align:center;
