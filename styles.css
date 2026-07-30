@@ -241,21 +241,25 @@
   color:#111;
 }
 
-.stories-container{
-
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:30px;
+.stories-wrapper{
 
     max-width:1200px;
-
     margin:0 auto;
-
-    justify-items:center;
+    overflow:hidden;
 
 }
+
+.stories-container{
+
+    display:flex;
+    gap:30px;
+
+}
+
 .story-card{
-    width: 300px;
+
+    flex:0 0 277px;
+
 }
 
 .story-card img{
