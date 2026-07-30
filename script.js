@@ -64,3 +64,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+const slider = document.querySelector(".stories-container");
+
+const cards = [...slider.children];
+
+// duplicamos las tarjetas
+cards.forEach(card=>{
+    slider.appendChild(card.cloneNode(true));
+});
+
+let position = 0;
+let paused = false;
+
+function animate(){
+
+    if(!paused){
+
+        position += 0.4;
+
+        const firstCardWidth = cards[0].offsetWidth + 30;
+
+        if(position >= firstCardWidth * cards.length){
+
+            position = 0;
+
+        }
+
+        slider.style.transform = `translateX(-${position}px)`;
+
+    }
+
+    requestAnimationFrame(animate);
+
+}
+
+animate();
+
+slider.addEventListener("mouseenter",()=>{
+
+    paused = true;
+
+});
+
+slider.addEventListener("mouseleave",()=>{
+
+    paused = false;
+
+});
