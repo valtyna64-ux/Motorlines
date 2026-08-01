@@ -91,6 +91,32 @@ document.addEventListener("DOMContentLoaded", () => {
         paused = false;
     });
 
+
+
+
+
+/* ==========================
+  prueba CARRUSEL 
+========================== */
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("Carrusel iniciado");
+
+    if (window.innerWidth <= 768) return;
+
+    const slider = document.querySelector(".stories-container");
+
+    console.log(slider);
+
+    if (!slider) return;
+
+    const cards = [...slider.children];
+
+    console.log(cards.length);
+
+    // resto del código...
+});
 });
 
 
