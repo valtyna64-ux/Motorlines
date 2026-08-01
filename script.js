@@ -24,3 +24,74 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+/* ==========================
+   CARRUSEL HISTORIAS
+========================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Solo en escritorio
+    if (window.innerWidth <= 768) return;
+
+    const slider = document.querySelector(".stories-container");
+
+    if (!slider) return;
+
+    const cards = [...slider.children];
+
+    // Duplicar las tarjetas para efecto infinito
+    cards.forEach(card => {
+        slider.appendChild(card.cloneNode(true));
+    });
+
+    let current = 0;
+    let paused = false;
+
+    const gap = 30; // Debe ser igual al gap del CSS
+    const cardWidth = cards[0].offsetWidth + gap;
+
+    slider.style.transition = "transform 0.8s ease";
+
+    function moveSlider() {
+
+        if (paused) return;
+
+        current++;
+
+        slider.style.transform = `translateX(-${current * cardWidth}px)`;
+
+        // Cuando termina el primer grupo de tarjetas
+        if (current >= cards.length) {
+
+            setTimeout(() => {
+
+                slider.style.transition = "none";
+                slider.style.transform = "translateX(0)";
+                current = 0;
+
+                // Fuerza el reflow
+                slider.offsetHeight;
+
+                slider.style.transition = "transform 0.8s ease";
+
+            }, 800);
+
+        }
+    }
+
+    setInterval(moveSlider, 4000);
+
+    slider.addEventListener("mouseenter", () => {
+        paused = true;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+        paused = false;
+    });
+
+});
+
+
+
