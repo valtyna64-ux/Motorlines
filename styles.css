@@ -10,8 +10,9 @@
 =========================== */
 
 .logo img{
-    height:0px;
-    display:block;
+   height: 40px;
+    width: auto;
+    display: block;
 }
 
 /* ===========================
