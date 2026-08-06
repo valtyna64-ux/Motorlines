@@ -2209,3 +2209,30 @@
 
 
 
+/* ==========================
+      menu dentro de los articulos 
+========================== */
+.article-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 18px;
+
+    background:#fff;
+}
+
+.article-logo img{
+    height:22px;
+}
+
+.article-menu{
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+
+
+
+
