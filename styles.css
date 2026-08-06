@@ -5,6 +5,12 @@
 /* ===========================
    LOGO
 =========================== */
+.logo img{
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
 .logo{
     position: static !important;
     left: auto !important;
