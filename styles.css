@@ -59,7 +59,9 @@
 
 
 .menu-toggle{
-    margin-left: auto !important;
+    margin-left: auto;
+    position: relative;
+    top: -8px;   /* Súbelo */
 }
 
 
