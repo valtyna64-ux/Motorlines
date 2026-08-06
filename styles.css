@@ -8,9 +8,19 @@
 /* ===========================
    LOGO
 =========================== */
+.logo{
+    position: static !important;
+    transform: none !important;
+
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+
+    display: flex;
+    align-items: center;
+}
 
 .logo img{
-   height: 40px;
+    height: 40px;
     width: auto;
     display: block;
 }
