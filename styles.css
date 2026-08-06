@@ -9,14 +9,10 @@
    LOGO
 =========================== */
 .logo{
-    position: static !important;
-    transform: none !important;
-
-    margin-left: 20px !important;
-    margin-right: 0 !important;
-
+    position: static;
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .logo img{
