@@ -6,11 +6,11 @@
     height:35px;
     width:auto;
     display:block;
-    margin-top:10;
+    margin-top:10px;
 }
 
 .logo{
-    position: static !important;
+    position: relative !important;
     left: auto !important;
     right: auto !important;
     transform: none !important;
@@ -21,7 +21,6 @@
     display: block !important;
     width: auto !important;
     top: 1px;   /* prueba con 2px, 3px o 4px */
-}
 }
 
 .navbar{
