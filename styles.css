@@ -6,9 +6,8 @@
     height:35px;
     width:auto;
     display:block;
-    margin-top:15px;
+    border:3px solid red;
 }
-
 .logo{
     position: relative !important;
     left: auto !important;
