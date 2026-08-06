@@ -120,4 +120,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* ==========================
+  prueba efecto scroll seccion foto week  
+========================== */
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+    reveals.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const top = section.getBoundingClientRect().top;
+
+        if(top < windowHeight - 100){
+            section.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
 
