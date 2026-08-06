@@ -44,6 +44,11 @@
 
 .header{
     width:100%;
+    background:red;
+}
+
+.navbar{
+    background:blue;
 }
 
 .navbar{
