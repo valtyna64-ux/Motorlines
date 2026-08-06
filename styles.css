@@ -3,15 +3,18 @@
    LOGO
 =========================== */
 .logo{
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
 
-    margin-left:20px;
+    margin-left: 20px !important;
+    margin-right: auto !important;
 
-    padding-top:18px;   /* <- baja todo el logo */
+    display: block !important;
+    width: auto !important;
+  
 }
-
 .logo img{
     height:35px;
     width:auto;
