@@ -41,20 +41,20 @@
    MENÚ
 =========================== */
 
+/* ===========================
+   MENÚ
+=========================== */
+
 .header{
     width:100%;
-    background:red;
-}
-
-.navbar{
-    background:blue;
 }
 
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 20px;
+    height:60px;      /* prueba entre 55px y 60px */
+    padding:0 20px;
 }
 
 
