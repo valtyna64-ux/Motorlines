@@ -35,16 +35,17 @@
 /* ===========================
    MENÚ
 =========================== */
+
 .header{
-    width: 100%;
+    width:100%;
 }
 
 .navbar{
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
 }
-
 
 
 .menu-toggle{
@@ -143,9 +144,6 @@
     color:#999;
 }
 
-/* ===========================
-   MÓVIL
-=========================== */
 @media (max-width:768px){
 
     .navbar{
@@ -153,7 +151,7 @@
     }
 
     .logo img{
-        height:40px;   /* o 35px si lo quieres un poco más pequeño */
+        height:40px;
         width:auto;
     }
 
@@ -162,11 +160,10 @@
     }
 
     .nav-menu{
-        top:140px;
+        top:130px;
         right:20px;
         width:220px;
     }
-
 }
 */diseño de ultimas noticias*/ 
 * HOVER */
