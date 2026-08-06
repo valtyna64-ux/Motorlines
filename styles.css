@@ -20,6 +20,8 @@
 
     display: block !important;
     width: auto !important;
+    top: 4px;   /* prueba con 2px, 3px o 4px */
+}
 }
 
 .navbar{
