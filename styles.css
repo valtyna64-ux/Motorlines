@@ -2,24 +2,20 @@
 /* ===========================
    LOGO
 =========================== */
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    margin-left:20px;
+
+    padding-top:18px;   /* <- baja todo el logo */
+}
+
 .logo img{
     height:35px;
     width:auto;
     display:block;
-    border:3px solid red;
-}
-.logo{
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-
-    margin-left: 20px !important;
-    margin-right: auto !important;
-
-    display: block !important;
-    width: auto !important;
-  
 }
 
 .navbar{
