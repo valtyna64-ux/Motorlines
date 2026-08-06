@@ -7,15 +7,12 @@
 =========================== */
 .logo{
     position: static;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
+    display:flex;
+    align-items:center;
+    margin-left:20px;
 
-.logo img{
-    height: 40px;
-    width: auto;
-    display: block;
+    border:2px solid red;
+    background:yellow;
 }
 
 /* ===========================
