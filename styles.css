@@ -129,7 +129,7 @@
 
 
     .logo{
-        margin-left: 5px !important;   /* Muévelo más a la izquierda */
+       margin-left: 0px !important;  /* Muévelo más a la izquierda */
     }
     .logo img{
         height:40px;
