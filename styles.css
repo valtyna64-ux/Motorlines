@@ -127,6 +127,10 @@
         padding:15px 20px;
     }
 
+
+    .logo{
+        margin-left: 5px !important;   /* Muévelo más a la izquierda */
+    }
     .logo img{
         height:40px;
         width:auto;
