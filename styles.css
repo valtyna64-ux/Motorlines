@@ -1402,8 +1402,8 @@
 
 .hero-btn{
     display:inline-block;
-    background:blue;
-    color:#000000;
+    background:grey;
+    color:#ffffff;
     text-decoration:none;
     padding:15px 35px;
     border-radius:30px;
@@ -1418,7 +1418,7 @@
     margin-left:90px; /* mueve a la derecha osito */
 }
 .hero-image img{
-    width:500px;
+    width:400px;
     max-width:90%;
     height:auto;
     transform: translateX(80px)translateY(-50px);;
@@ -1460,7 +1460,7 @@
 
   /* ↓ ESTE ES EL QUE CAMBIA EL TAMAÑO DE RIGEL */
   .rigel-video{
-    width:190px;      /* prueba 100px, 120px o 140px */
+    width:170px;      /* prueba 100px, 120px o 140px */
     height:auto;
   }
 
