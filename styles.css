@@ -1536,6 +1536,7 @@
 }
 
 /* FOTO DE LA SEMANA */
+* FOTO DE LA SEMANA */
 
 .photo-week{
   padding:80px 40px;
@@ -1551,8 +1552,8 @@
 }
 
 .photo-main img{
-  width:90%;
-  height:500px;
+  width:100%;
+  height:auto;
   display:block;
 }
 
@@ -1623,7 +1624,6 @@
   border-left:1px solid #ddd;
   padding-left:40px;
 }
-
 /* 📱 FOTO DE LA SEMANA - MÓVIL */
 
 @media (max-width: 768px){
