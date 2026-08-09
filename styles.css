@@ -1356,15 +1356,13 @@
 /* HERO / INICIO */
 /* ===================== */
 
-.hero-btn{
-    display:inline-block;
-    background:#000;
-    color:#FFFFFF;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:30px;
-    font-weight:bold;
-}
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:4px 8%;
+    min-height:9vh;
+    background:#000000;
 
 
 .hero-text{
