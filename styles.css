@@ -2239,4 +2239,14 @@
 
 
 
+.sketch-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: #111;
+    margin-bottom: 35px;
+}
+
+
 
