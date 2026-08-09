@@ -2237,15 +2237,25 @@
 }
 
 
-
-
-.sketch-title {
+.sketch-header {
     text-align: center;
+    margin-bottom: 35px;
+}
+
+.sketch-header h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 4px;
     color: #111;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
+}
+
+.sketch-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 
