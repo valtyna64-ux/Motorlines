@@ -120,6 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* ==========================
+  velocidad video mercedes 
+========================== */
+
+const video = document.querySelector(".art-hero-video");
+
+video.playbackRate = 0.7;
+
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
