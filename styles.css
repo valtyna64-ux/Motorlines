@@ -2261,7 +2261,7 @@
 
 
 /* ===========================
-   VIDEO PRINCIPAL
+   VIDEO PRINCIPAL monitor
 =========================== */
 
 .art-hero {
@@ -2278,11 +2278,35 @@
 }
 
 
-@media (max-width: 768px) {
+/* ===========================
+   VIDEO PRINCIPAL monitor prueba tamaño monitor
+=========================== */
+
+@media (min-width: 769px) {
 
     .art-hero {
-        height: 65vh;
+        height: 85vh;
+    }
+
+    .art-hero-video {
+        object-position: center bottom;
     }
 
 }
 
+/* ===========================
+   VIDEO PRINCIPAL celular
+=========================== */
+
+@media (max-width: 768px) {
+
+    .art-hero {
+        height: 45vh;
+    }
+
+    .art-hero-video {
+        object-fit: cover;
+        object-position: center center;
+    }
+
+}
