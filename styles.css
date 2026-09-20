@@ -71,7 +71,7 @@
 .nav-menu{
     display: none;
     position: absolute;
-    top: 130px;/* pone mas abajo el cuadro de despliegue de menu */
+    top: 100px;/* pone mas abajo el cuadro de despliegue de menu */
     right: 20px;
 
     width: 220px;
