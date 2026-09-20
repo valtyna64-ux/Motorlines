@@ -2314,3 +2314,18 @@
     }
 
 }
+
+/* =========================
+   IMAGEN FINAL DEL ARTÍCULO
+========================= */
+
+.article-final-image {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.article-final-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
