@@ -2476,6 +2476,217 @@
 
 
 
+/* =================================
+   MOTORSHOOTING PH HTML
+================================= */
+
+.motor-photo {
+    position: relative;
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+/* IMAGEN */
+
+.motor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* CAPA gris*/
+
+.motor-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(20, 20, 20, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+      pointer-events: none;
+}
+
+
+/* AL PASAR EL CURSOR */
+
+.motor-photo:hover .motor-overlay {
+    opacity: 1;
+}
+
+
+/* PEQUEÑO ZOOM */
+
+.motor-photo:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================
+   MOTORSHOOTING
+========================== */
+
+.motorshooting {
+    width: 100%;
+    margin: 80px 0;
+    padding: 0;
+}
+
+/* TÍTULO */
+
+.motorshooting-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.motorshooting-header span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #5DADE2;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.motorshooting-header h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #111;
+}
+
+.motorshooting-header p {
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+/* BANNERMOTORSHOOTING */
+
+.motorshooting-banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.motorshooting-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+/* OSCURECER IMAGEN */
+
+.motorshooting-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    transition: background 0.4s ease;
+}
+
+/* TEXTO SOBRE LA IMAGEN */
+
+.motorshooting-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.motorshooting-overlay span {
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.motorshooting-overlay h3 {
+    margin: 12px 0 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* HOVER */
+
+.motorshooting-banner:hover img {
+    transform: scale(1.04);
+}
+
+.motorshooting-banner:hover::after {
+    background: rgba(0, 0, 0, 0.42);
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .motorshooting {
+        margin: 55px 0;
+    }
+
+    .motorshooting-header h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .motorshooting-header p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        padding: 0 20px;
+    }
+
+    .motorshooting-banner {
+        height: 300px;
+    }
+
+    .motorshooting-overlay h3 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .motorshooting-overlay span {
+        font-size: 10px;
+    }
+}
+
+
 /* ============================
    POLÍTICA DE PRIVACIDAD
 ============================ */
