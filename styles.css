@@ -2473,3 +2473,435 @@
         font-size: 10px;
     }
 }
+
+
+
+/* ============================
+   POLÍTICA DE PRIVACIDAD
+============================ */
+
+.privacy-page {
+    width: 100%;
+    padding: 70px 20px 90px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.privacy-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.privacy-container h1 {
+    margin: 0 0 12px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #111;
+    text-align: center;
+}
+
+/* FECHA */
+
+.privacy-date {
+    margin: 0 0 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* PÁRRAFOS */
+
+.privacy-container p {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* SUBTÍTULOS */
+
+.privacy-container h2 {
+    margin: 45px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* NEGRITAS */
+
+.privacy-container strong {
+    color: #111;
+}
+
+/* ENLACES */
+
+.privacy-container a {
+    color: #5DADE2;
+    text-decoration: none;
+}
+
+.privacy-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================
+   RESPONSIVE - TABLET
+============================ */
+
+@media (max-width: 768px) {
+
+    .privacy-page {
+        padding: 50px 20px 70px;
+    }
+
+    .privacy-container h1 {
+        font-size: 38px;
+    }
+
+    .privacy-date {
+        margin-bottom: 40px;
+    }
+
+    .privacy-container h2 {
+        font-size: 23px;
+        margin-top: 38px;
+    }
+
+    .privacy-container p {
+        font-size: 15.5px;
+        line-height: 1.75;
+    }
+}
+
+
+/* ============================
+   RESPONSIVE - CELULAR
+============================ */
+
+@media (max-width: 480px) {
+
+    .privacy-page {
+        padding: 40px 18px 60px;
+    }
+
+    .privacy-container h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .privacy-date {
+        font-size: 13px;
+        margin-bottom: 35px;
+    }
+
+    .privacy-container h2 {
+        font-size: 21px;
+        margin-top: 35px;
+    }
+
+    .privacy-container p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* ============================
+   MOTORSHOOTING - LINK IMAGEN
+============================ */
+
+.motor-photo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.motor-photo > a img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* =================================
+   MOTORSHOOTING - PÁGINA INDIVIDUAL zoom auto
+================================= */
+
+.motorshooting-detail {
+    width: 100%;
+    padding: 70px 30px 100px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.motorshooting-detail-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =================================
+   IMAGEN PRINCIPAL
+================================= */
+.motorshooting-detail-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.motorshooting-detail-image img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =================================
+   INFORMACIÓN DEL AUTO
+================================= */
+
+.motorshooting-detail-info {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* PEQUEÑO TÍTULO */
+
+.motorshooting-detail-label {
+    margin: 0 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #5DADE2;
+}
+
+
+/* NOMBRE DEL AUTO */
+
+.motorshooting-detail-info h1 {
+    margin: 0 0 35px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+    color: #111;
+}
+
+
+/* =================================
+   INFORMACIÓN BÁSICA
+================================= */
+
+.motorshooting-basic-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    margin-bottom: 50px;
+}
+
+.motorshooting-basic-info div {
+    padding: 24px 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.motorshooting-basic-info div:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+
+/* ETIQUETA */
+
+.motorshooting-basic-info span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+/* INFORMACIÓN */
+
+.motorshooting-basic-info strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #111;
+}
+
+
+/* =================================
+   DATOS TÉCNICOS
+================================= */
+
+.motorshooting-specs {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.motorshooting-specs h2 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+
+    color: #111;
+}
+
+
+/* FILA DE DATOS */
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* NOMBRE DEL DATO */
+
+.spec-row span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* VALOR */
+
+.spec-row strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #111;
+}
+
+
+/* =================================
+   RESPONSIVE - TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+    .motorshooting-detail {
+        padding: 50px 20px 70px;
+    }
+
+    .motorshooting-detail-image {
+        margin-bottom: 35px;
+    }
+
+    .motorshooting-detail-image img {
+        max-height: 550px;
+    }
+
+    .motorshooting-detail-info h1 {
+        font-size: 38px;
+    }
+
+    .motorshooting-basic-info {
+        grid-template-columns: 1fr;
+    }
+
+    .motorshooting-basic-info div:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .motorshooting-basic-info div {
+        padding: 18px 0;
+    }
+}
+
+
+/* =================================
+   RESPONSIVE - CELULAR
+================================= */
+
+@media (max-width: 480px) {
+
+    .motorshooting-detail {
+        padding: 35px 16px 60px;
+    }
+
+    .motorshooting-detail-image {
+        margin-bottom: 30px;
+    }
+
+    .motorshooting-detail-image img {
+        max-height: 450px;
+    }
+
+    .motorshooting-detail-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .motorshooting-detail-info h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .motorshooting-basic-info {
+        margin-bottom: 35px;
+    }
+
+    .motorshooting-basic-info div {
+        padding: 16px 0;
+    }
+
+    .motorshooting-specs h2 {
+        font-size: 25px;
+    }
+
+    .spec-row {
+        padding: 13px 0;
+    }
+
+    .spec-row span,
+    .spec-row strong {
+        font-size: 13px;
+    }
+}
+
+
+
