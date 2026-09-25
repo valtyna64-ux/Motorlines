@@ -2321,22 +2321,17 @@
 .motor-photo {
     position: relative;
     width: 30%;
-    height: 500px;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
 }
-
-
-/* IMAGEN */
 
 .motor-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-
     transition: transform 0.4s ease;
 }
-
 
 /* CAPA gris*/
 
