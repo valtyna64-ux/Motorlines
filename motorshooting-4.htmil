@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Citroën 2CV6 | MOTORSHOOTING | Motorlines</title>
+
+    <meta name="description"
+        content="MOTORSHOOTING - Citroën 2CV6. Fotografía y ficha técnica del vehículo.">
+
+    <link rel="canonical"
+        href="https://motorlines.it.com/motorshooting-2.html">
+
+    <link rel="icon" href="starmlicono.ico">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="starwin.ico" alt="Motorlines">
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     MOTORSHOOTING DETALLE
+========================== -->
+
+<main class="motorshooting-detail">
+
+    <div class="motorshooting-detail-container">
+
+        <div class="motorshooting-detail-info">
+
+            <p class="motorshooting-detail-label">
+                MOTORSHOOTING
+            </p>
+
+            <h1>Citroën 2CV6</h1>
+
+
+            <div class="motorshooting-detail-image">
+
+                <img src="Motorshoot2.jpeg"
+                     alt="Citroën 2CV6">
+
+            </div>
+
+
+            <div class="motorshooting-basic-info">
+
+                <div>
+                    <span>Marca</span>
+                    <strong>Citroën</strong>
+                </div>
+
+                <div>
+                    <span>País</span>
+                    <strong>Francia</strong>
+                </div>
+
+                <div>
+                    <span>Modelo</span>
+                    <strong>2CV6</strong>
+                </div>
+
+            </div>
+
+
+            <div class="motorshooting-specs">
+
+                <h2>Datos técnicos</h2>
+
+
+                <div class="spec-row">
+                    <span>Motor</span>
+                    <strong>Bicilíndrico bóxer</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Cilindrada</span>
+                    <strong>602 cc</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Potencia</span>
+                    <strong>29 hp aprox.</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Torque</span>
+                    <strong>39 Nm aprox.</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Transmisión</span>
+                    <strong>Manual de 4 velocidades</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Tracción</span>
+                    <strong>Delantera</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Carrocería</span>
+                    <strong>Berlina 4 puertas</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Refrigeración</span>
+                    <strong>Por aire</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Peso</span>
+                    <strong>≈ 600 kg</strong>
+                </div>
+
+
+                <div class="spec-row">
+                    <span>Velocidad máxima</span>
+                    <strong>≈ 110 km/h</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+</body>
+
+</html>
