@@ -3023,3 +3023,20 @@
     height: 360px;
     object-fit: cover;
 }
+
+
+
+RESPONSIVE — CELULAR ========================== *
+/ @media (max-width: 768px) 
+
+{ .halloween-banner
+ { width: 100%; 
+margin: 0; 
+padding: 0; } 
+
+.halloween-banner
+ img { width: 100%;
+ height: 190px; 
+object-fit: cover;
+ object-position: center; } 
+}
