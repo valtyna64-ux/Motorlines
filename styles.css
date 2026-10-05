@@ -3047,3 +3047,62 @@
 }
 
 
+
+/* ==========================
+   BRILLO SOLO EN HALLOWEEN
+========================== */
+
+.halloween-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 45%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.25) 50%,
+        transparent 100%
+    );
+
+    transform: skewX(-20deg);
+    animation: halloween-shine 6s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+@keyframes halloween-shine {
+
+    0% {
+        left: -100%;
+    }
+
+    35% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width: 768px) {
+
+    .halloween-banner img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .halloween-banner::after {
+        width: 60%;
+    }
+}
+
