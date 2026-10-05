@@ -3005,7 +3005,7 @@
 
 
 
-
+```css
 /* ==========================
    HALLOWEEN BANNER
 ========================== */
@@ -3022,8 +3022,10 @@
     width: 100%;
     height: 360px;
     object-fit: cover;
-}
 
+    /* Efecto suave */
+    animation: halloween-glow 4s ease-in-out infinite;
+}
 
 
 /* ==========================
@@ -3045,46 +3047,22 @@
         object-position: center;
     }
 }
-
-
-
 /* ==========================
-   BRILLO SOLO EN HALLOWEEN
+   EFECTO SOLO EN LA IMAGEN
 ========================== */
 
-.halloween-banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 45%;
-    height: 100%;
-
-    background: linear-gradient(
-        110deg,
-        transparent 0%,
-        rgba(255, 255, 255, 0.25) 50%,
-        transparent 100%
-    );
-
-    transform: skewX(-20deg);
-    animation: halloween-shine 6s ease-in-out infinite;
-
-    pointer-events: none;
-}
-
-@keyframes halloween-shine {
+@keyframes halloween-glow {
 
     0% {
-        left: -100%;
+        filter: brightness(1);
     }
 
-    35% {
-        left: 120%;
+    50% {
+        filter: brightness(1.12);
     }
 
     100% {
-        left: 120%;
+        filter: brightness(1);
     }
 }
 
@@ -3101,8 +3079,5 @@
         object-fit: contain;
     }
 
-    .halloween-banner::after {
-        width: 60%;
-    }
 }
-
+```
