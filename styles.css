@@ -3052,8 +3052,9 @@
 ========================== */
 
 .colibri-banner {
-    width: 100%;
-    margin: 0;
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
 }
@@ -3061,7 +3062,7 @@
 .colibri-banner img {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
     object-position: center;
 }
