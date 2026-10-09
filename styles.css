@@ -3052,7 +3052,7 @@
 ========================== */
 
 .colibri-banner {
-    width: 70%;
+    width: calc(100% - 10cm);
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
@@ -3066,7 +3066,6 @@
     object-fit: cover;
     object-position: center;
 }
-
 
 /* ==========================
    RESPONSIVE — CELULAR
