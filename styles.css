@@ -3085,5 +3085,162 @@
         object-fit: contain;
     }
 }
-```
+
+
+/* ========================================
+   MOTORLINES MERCH  detalleslienzos - RESPONSIVE CELULAR
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Contenedor principal del producto */
+    .product-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 25px 18px 40px;
+        gap: 25px;
+        margin: 0 auto;
+    }
+
+    /* Imagen del producto */
+    .product-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .product-image img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 2px;
+    }
+
+    /* Información del producto */
+    .product-info {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ruta de navegación */
+    .product-info .breadcrumb {
+        font-size: 11px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Nombre de la obra */
+    .product-info h1 {
+        font-size: clamp(27px, 7vw, 34px);
+        line-height: 1.2;
+        margin: 0 0 10px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Subtítulo */
+    .product-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    /* Precio */
+    .product-price {
+        font-size: 23px;
+        margin: 15px 0 25px;
+    }
+
+    /* Especificaciones de la obra */
+    .product-option {
+        width: 100%;
+        margin: 0 0 25px;
+    }
+
+    .product-specs {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-specs p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0 0 10px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Botón de compra */
+    .add-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 50px;
+        padding: 14px 18px;
+        margin: 20px 0 30px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Detalles de la obra */
+    .product-details {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .product-details h3 {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    .product-details p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        overflow-wrap: anywhere;
+    }
+
+}
+
+/* ========================================
+   CELULARES PEQUEÑOS
+======================================== */
+
+@media screen and (max-width: 380px) {
+
+    .product-page {
+        padding: 20px 14px 30px;
+        gap: 20px;
+    }
+
+    .product-info h1 {
+        font-size: 27px;
+    }
+
+    .product-price {
+        font-size: 21px;
+    }
+
+    .product-specs p,
+    .product-details p {
+        font-size: 13px;
+    }
+
+}
+
 
