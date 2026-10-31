@@ -3274,22 +3274,23 @@
 
 }
 
-/* ==========================
-   INSTAGRAM MOTORSHOOTING
-   RESPONSIVE CELULAR
-========================== */
+@media screen and (max-width: 600px) {
 
-@media (max-width: 600px) {
-
-    .motorshooting-instagram {
+    .motorshooting-overlay .motorshooting-instagram {
+        font-size: 9px !important;
         gap: 5px;
-        margin-top: 10px;
-        font-size: 10px;
+        margin-top: 8px;
     }
 
-    .motorshooting-instagram i {
-        font-size: 13px;
+    .motorshooting-overlay .motorshooting-instagram span {
+        font-size: 9px !important;
+        line-height: 1.2;
     }
 
+    .motorshooting-overlay .motorshooting-instagram i {
+        font-size: 12px !important;
+    }
+
+}
 }
 
