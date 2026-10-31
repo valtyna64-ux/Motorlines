@@ -3244,7 +3244,33 @@
     .product-specs p,
     .product-details p {
         font-size: 13px;
+       
     }
+
+
+
+   /* INSTAGRAM DEL FOTÓGRAFO, motorshooting baner */
+
+.motorshooting-instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.motorshooting-instagram i {
+    font-size: 19px;
+}
+
+.motorshooting-instagram:hover {
+    opacity: 1;
+    color: #5DADE2;
+}
 
 }
 
