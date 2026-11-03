@@ -1715,28 +1715,25 @@
     line-height:1.7;
 }
 
+/* GALERÍA DE 4 IMÁGENES */
+
 .art-wrapper{
-    display:flex;
-    align-items:center;
+    width:100%;
     position:relative;
 }
 
 .art-slider{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
     gap:25px;
-    overflow-x:auto;
-    scroll-behavior:smooth;
-    scrollbar-width:none;
+    width:100%;
+    overflow:visible;
     padding-bottom:15px;
 }
 
-.art-slider::-webkit-scrollbar{
-    display:none;
-}
-
 .art-card{
-    min-width:320px;
-    flex-shrink:0;
+    min-width:0;
+    width:100%;
     background:#fff;
     border-radius:15px;
     overflow:hidden;
@@ -1768,7 +1765,6 @@
     line-height:1.6;
     font-size:15px;
 }
-
 /* ===================== */
 /* RESPONSIVE */
 /* ===================== */
