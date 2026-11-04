@@ -1694,55 +1694,80 @@
 /* ===================== */
 /* GALERÍA DE 5 IMÁGENES CUADRADAS */
 
+* SKETCH GARAGE */
+/* ===================== */
+
+.art-gallery{
+    padding:80px 50px;
+    background:#f8f8f8;
+}
+
+.art-gallery h2{
+    font-size:42px;
+    font-family:'Playfair Display', serif;
+    color:#111;
+    text-align:center;
+    margin-bottom:12px;
+}
+
+.art-subtitle{
+    font-size:18px;
+    color:#666;
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 45px;
+    line-height:1.7;
+}
+
+/* GALERÍA DE 4 IMÁGENES */
+
 .art-wrapper{
     width:100%;
-    max-width:1200px;
-    margin:0 auto;
+    position:relative;
 }
 
 .art-slider{
     display:grid;
-    grid-template-columns:repeat(5, minmax(0, 1fr));
-    gap:15px;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:25px;
     width:100%;
+    overflow:visible;
     padding-bottom:15px;
 }
 
-/* TARJETAS */
-
 .art-card{
-    width:100%;
     min-width:0;
+    width:100%;
     background:#fff;
-    border-radius:12px;
+    border-radius:15px;
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.35s;
 }
 
-/* IMÁGENES CUADRADAS */
-
-.art-card img{
-    display:block;
-    width:100%;
-    aspect-ratio:1 / 1;
-    height:auto;
-    object-fit:cover;
+.art-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
-/* TEXTOS */
+.art-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+}
 
 .art-card h4{
-    margin:12px;
-    font-size:16px;
+    margin:18px;
+    font-size:20px;
     color:#111;
 }
 
 .art-card p{
-    margin:0 12px 15px;
+    margin:0 18px 20px;
     color:#666;
-    font-size:13px;
-    line-height:1.5;
+    line-height:1.6;
+    font-size:15px;
 }
 /* ===================== */
 /* RESPONSIVE */
