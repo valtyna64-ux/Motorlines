@@ -540,69 +540,71 @@ menu.addEventListener("click", function () {
     nav.classList.toggle("active");
 });
 </script>
-          
-  
-  <!-- efecto nieve -->
+ <!-- MOTORLINES SNOW EFFECT -->
 
-  <style>
+<style>
 #motorlines-snow {
     position: fixed;
     inset: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     pointer-events: none;
-    z-index: 99998;
+    overflow: hidden;
+    z-index: 999999;
 }
 
 .motor-snowflake {
     position: absolute;
     top: -30px;
-    color: #b9e4ff;
-    text-shadow: 0 0 4px #555, 0 0 8px white;
+    color: #ffffff;
+    font-size: 15px;
+    text-shadow: 0 0 5px #8ecfff, 0 0 10px white;
+    pointer-events: none;
     animation: motorSnowFall linear infinite;
-    will-change: transform;
 }
 
 @keyframes motorSnowFall {
-    from {
+    0% {
         transform: translate3d(0, -30px, 0) rotate(0deg);
     }
-    to {
-        transform: translate3d(50px, 110vh, 0) rotate(360deg);
+    100% {
+        transform: translate3d(70px, 110vh, 0) rotate(360deg);
     }
 }
 </style>
 
 <script>
-(function () {
+window.addEventListener("load", function() {
 
     const container = document.createElement("div");
     container.id = "motorlines-snow";
+
     document.body.appendChild(container);
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 120; i++) {
 
         const flake = document.createElement("span");
 
         flake.className = "motor-snowflake";
-        flake.textContent = "❄";
+        flake.innerHTML = "❄";
 
-        flake.style.left = Math.random() * 100 + "vw";
-        flake.style.top = Math.random() * -100 + "vh";
-        flake.style.fontSize = (Math.random() * 12 + 8) + "px";
+        flake.style.left = Math.random() * 100 + "%";
+        flake.style.top = Math.random() * 100 + "vh";
 
-        const duration = Math.random() * 8 + 7;
+        flake.style.fontSize =
+            (Math.random() * 14 + 6) + "px";
 
-        flake.style.animationDuration = duration + "s";
-        flake.style.animationDelay = "0s";
+        flake.style.opacity =
+            Math.random() * 0.8 + 0.2;
+
+        flake.style.animationDuration =
+            (Math.random() * 8 + 6) + "s";
 
         container.appendChild(flake);
     }
 
-})();
+});
 </script>
-  
-  
+
 </body>
 </html>
