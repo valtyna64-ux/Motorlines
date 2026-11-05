@@ -65,55 +65,68 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <i class="fas fa-comment-dots"></i>
 </a>
 <script src="script.js"></script>
-<!-- efecto nieve -->
-  <script>
+
+  
+  <!-- efecto nieve -->
+
+  <style>
+#motorlines-snow {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 99998;
+}
+
+.motor-snowflake {
+    position: absolute;
+    top: -30px;
+    color: #b9e4ff;
+    text-shadow: 0 0 4px #555, 0 0 8px white;
+    animation: motorSnowFall linear infinite;
+    will-change: transform;
+}
+
+@keyframes motorSnowFall {
+    from {
+        transform: translate3d(0, -30px, 0) rotate(0deg);
+    }
+    to {
+        transform: translate3d(50px, 110vh, 0) rotate(360deg);
+    }
+}
+</style>
+
+<script>
 (function () {
 
-    const snowContainer = document.createElement("div");
-    snowContainer.id = "snow-container";
-
-    snowContainer.style.position = "fixed";
-    snowContainer.style.top = "0";
-    snowContainer.style.left = "0";
-    snowContainer.style.width = "100%";
-    snowContainer.style.height = "100%";
-    snowContainer.style.pointerEvents = "none";
-    snowContainer.style.overflow = "hidden";
-    snowContainer.style.zIndex = "99998";
-
-    document.body.appendChild(snowContainer);
+    const container = document.createElement("div");
+    container.id = "motorlines-snow";
+    document.body.appendChild(container);
 
     for (let i = 0; i < 100; i++) {
 
-        const snow = document.createElement("div");
+        const flake = document.createElement("span");
 
-        snow.innerHTML = "❄";
+        flake.className = "motor-snowflake";
+        flake.textContent = "❄";
 
-        snow.style.position = "absolute";
-        snow.style.left = Math.random() * 100 + "%";
-        snow.style.top = "-30px";
-        snow.style.color = "white";
-        snow.style.fontSize = (Math.random() * 15 + 8) + "px";
-        snow.style.opacity = Math.random() * 0.7 + 0.3;
-        snow.style.textShadow = "0 0 5px #aaa";
+        flake.style.left = Math.random() * 100 + "vw";
+        flake.style.top = Math.random() * -100 + "vh";
+        flake.style.fontSize = (Math.random() * 12 + 8) + "px";
 
-        const duration = Math.random() * 8 + 6;
+        const duration = Math.random() * 8 + 7;
 
-        snow.animate([
-            { transform: "translate(0, 0)" },
-            { transform: `translate(${Math.random() * 100 - 50}px, ${window.innerHeight + 50}px)` }
-        ], {
-            duration: duration * 1000,
-            iterations: Infinity,
-            delay: -Math.random() * duration * 1000
-        });
+        flake.style.animationDuration = duration + "s";
+        flake.style.animationDelay = "0s";
 
-        snowContainer.appendChild(snow);
+        container.appendChild(flake);
     }
 
 })();
 </script>
-  
   
   <body>
 
