@@ -132,3 +132,44 @@ video.playbackRate = 0.7;
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
+/* ==========================
+  nieve
+========================== */
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const snowContainer = document.createElement("div");
+
+    snowContainer.id = "snow-container";
+
+    document.body.appendChild(snowContainer);
+
+    const snowCount = 80;
+
+    for (let i = 0; i < snowCount; i++) {
+
+        const snowflake = document.createElement("span");
+
+        snowflake.className = "snowflake";
+        snowflake.innerHTML = "❄";
+
+        snowflake.style.left = Math.random() * 100 + "vw";
+
+        snowflake.style.fontSize =
+            (Math.random() * 12 + 5) + "px";
+
+        snowflake.style.animationDuration =
+            (Math.random() * 8 + 5) + "s";
+
+        snowflake.style.animationDelay =
+            (Math.random() * 10) + "s";
+
+        snowflake.style.opacity =
+            Math.random() * 0.7 + 0.3;
+
+        snowContainer.appendChild(snowflake);
+    }
+
+});
+</script>
+
