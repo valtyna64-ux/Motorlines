@@ -3322,3 +3322,36 @@
     }
 }
 
+
+/* Ocultar puntos en computador-seccion historias reales */
+.stories-dots {
+    display: none;
+}
+
+/* Mostrar puntos solamente en celular */
+@media screen and (max-width: 768px) {
+    .stories-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        margin-top: 22px;
+    }
+
+    .stories-dots button {
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: #bdbdbd;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .stories-dots button.active {
+        width: 22px;
+        border-radius: 10px;
+        background: #5DADE2;
+    }
+}
