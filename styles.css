@@ -3297,3 +3297,31 @@
 }
 }
 
+
+
+/* ============================= */
+/* MOTORLINES - EFECTO DE NIEVE */
+/* ============================= */
+
+.snowflake {
+    position: fixed;
+    top: -20px;
+    color: #fff;
+    pointer-events: none;
+    user-select: none;
+    z-index: 99998;
+    opacity: 0.9;
+    text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    animation: snow-fall linear infinite;
+}
+
+@keyframes snow-fall {
+    0% {
+        transform: translateY(-20px) translateX(0);
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(40px);
+    }
+}
+
