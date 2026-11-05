@@ -66,68 +66,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </a>
 <script src="script.js"></script>
 
-  
-  <!-- efecto nieve -->
-
-  <style>
-#motorlines-snow {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 99998;
-}
-
-.motor-snowflake {
-    position: absolute;
-    top: -30px;
-    color: #b9e4ff;
-    text-shadow: 0 0 4px #555, 0 0 8px white;
-    animation: motorSnowFall linear infinite;
-    will-change: transform;
-}
-
-@keyframes motorSnowFall {
-    from {
-        transform: translate3d(0, -30px, 0) rotate(0deg);
-    }
-    to {
-        transform: translate3d(50px, 110vh, 0) rotate(360deg);
-    }
-}
-</style>
-
-<script>
-(function () {
-
-    const container = document.createElement("div");
-    container.id = "motorlines-snow";
-    document.body.appendChild(container);
-
-    for (let i = 0; i < 100; i++) {
-
-        const flake = document.createElement("span");
-
-        flake.className = "motor-snowflake";
-        flake.textContent = "❄";
-
-        flake.style.left = Math.random() * 100 + "vw";
-        flake.style.top = Math.random() * -100 + "vh";
-        flake.style.fontSize = (Math.random() * 12 + 8) + "px";
-
-        const duration = Math.random() * 8 + 7;
-
-        flake.style.animationDuration = duration + "s";
-        flake.style.animationDelay = "0s";
-
-        container.appendChild(flake);
-    }
-
-})();
-</script>
-  
   <body>
 
 
@@ -602,6 +540,69 @@ menu.addEventListener("click", function () {
     nav.classList.toggle("active");
 });
 </script>
+          
+  
+  <!-- efecto nieve -->
+
+  <style>
+#motorlines-snow {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 99998;
+}
+
+.motor-snowflake {
+    position: absolute;
+    top: -30px;
+    color: #b9e4ff;
+    text-shadow: 0 0 4px #555, 0 0 8px white;
+    animation: motorSnowFall linear infinite;
+    will-change: transform;
+}
+
+@keyframes motorSnowFall {
+    from {
+        transform: translate3d(0, -30px, 0) rotate(0deg);
+    }
+    to {
+        transform: translate3d(50px, 110vh, 0) rotate(360deg);
+    }
+}
+</style>
+
+<script>
+(function () {
+
+    const container = document.createElement("div");
+    container.id = "motorlines-snow";
+    document.body.appendChild(container);
+
+    for (let i = 0; i < 100; i++) {
+
+        const flake = document.createElement("span");
+
+        flake.className = "motor-snowflake";
+        flake.textContent = "❄";
+
+        flake.style.left = Math.random() * 100 + "vw";
+        flake.style.top = Math.random() * -100 + "vh";
+        flake.style.fontSize = (Math.random() * 12 + 8) + "px";
+
+        const duration = Math.random() * 8 + 7;
+
+        flake.style.animationDuration = duration + "s";
+        flake.style.animationDelay = "0s";
+
+        container.appendChild(flake);
+    }
+
+})();
+</script>
+  
   
 </body>
 </html>
