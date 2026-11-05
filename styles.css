@@ -259,78 +259,75 @@
 }
 
 /* 📱 MÓVIL */
-/* 📱 MÓVIL */
+/* ================================= */
+/* 📱 HISTORIAS - CARRUSEL MÓVIL */
+/* ================================= */
+
 @media screen and (max-width:768px){
 
-  .stories{
-    padding:10px;
-  }
-
-  .stories-wrapper{
-    overflow:visible;
-  }
-
-  .stories-container{
-    display:grid !important;
-    grid-template-columns:1fr;
-    gap:30px;
-    width:100%;
-    transform:none !important;
-  }
-
-  .story-card{
-    width:85%;
-    max-width:320px;
-    margin:0 auto;
-    flex:none;
-  }
-
-  .story-card img{
-    width:100%;
-    height:auto;
-    display:block;
-    border-radius:15px;
-  }
-
-  .stories-wrapper{
-        overflow:visible;
+    .stories{
+        padding: 10px;
     }
 
-   
-}
+    .stories-wrapper{
+        position: relative;
+        overflow: hidden;
+        padding: 0 35px;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
+    .stories-container{
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
 
-  .btn-leer{
-    width:100%;
-    text-align:center;
-  }
+        width: 100%;
+        gap: 0;
 
+        overflow-x: auto;
+        overflow-y: hidden;
 
-/* FLECHAS */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
 
-.arrow {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
 
-.arrow:hover {
-  background: white;
-  color: black;
-}
+        transform: none !important;
+    }
 
-.left {
-  margin-right: 15px;
-}
+    .stories-container::-webkit-scrollbar{
+        display: none;
+    }
 
-.right {
-  margin-left: 15px;
+    .story-card{
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0;
+        box-sizing: border-box;
+
+        scroll-snap-align: center;
+    }
+
+    .story-card img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .stories-arrow{
+        display: flex;
+    }
+
+    .btn-leer{
+        width: 100%;
+        text-align: center;
+    }
 }
 /* ===================== */
 /* MERCH SLIDER */
