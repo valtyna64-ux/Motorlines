@@ -65,7 +65,57 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <i class="fas fa-comment-dots"></i>
 </a>
 <script src="script.js"></script>
-<body>
+<!-- efecto nieve -->
+  <script>
+(function () {
+
+    const snowContainer = document.createElement("div");
+    snowContainer.id = "snow-container";
+
+    snowContainer.style.position = "fixed";
+    snowContainer.style.top = "0";
+    snowContainer.style.left = "0";
+    snowContainer.style.width = "100%";
+    snowContainer.style.height = "100%";
+    snowContainer.style.pointerEvents = "none";
+    snowContainer.style.overflow = "hidden";
+    snowContainer.style.zIndex = "99998";
+
+    document.body.appendChild(snowContainer);
+
+    for (let i = 0; i < 100; i++) {
+
+        const snow = document.createElement("div");
+
+        snow.innerHTML = "❄";
+
+        snow.style.position = "absolute";
+        snow.style.left = Math.random() * 100 + "%";
+        snow.style.top = "-30px";
+        snow.style.color = "white";
+        snow.style.fontSize = (Math.random() * 15 + 8) + "px";
+        snow.style.opacity = Math.random() * 0.7 + 0.3;
+        snow.style.textShadow = "0 0 5px #aaa";
+
+        const duration = Math.random() * 8 + 6;
+
+        snow.animate([
+            { transform: "translate(0, 0)" },
+            { transform: `translate(${Math.random() * 100 - 50}px, ${window.innerHeight + 50}px)` }
+        ], {
+            duration: duration * 1000,
+            iterations: Infinity,
+            delay: -Math.random() * duration * 1000
+        });
+
+        snowContainer.appendChild(snow);
+    }
+
+})();
+</script>
+  
+  
+  <body>
 
 
 
