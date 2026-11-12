@@ -3028,20 +3028,41 @@
    MOTORSHOOTINGph - CELULAR
 ================================= */
 
-@media (max-width: 768px) {
+/* =================================
+   MOTORSHOOTING PH - RESPONSIVE CELULAR
+================================= */
 
-    .motor-photos {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+
+    .motorshooting-gallery {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        width: 100% !important;
         gap: 20px;
-        width: 100%;
     }
 
     .motor-photo {
-        width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
         aspect-ratio: 1 / 1;
+        margin: 0 auto;
+    }
+
+    .motor-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .motor-overlay {
+        font-size: 20px;
     }
 
 }
+
 
 
 
