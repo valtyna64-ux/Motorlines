@@ -3032,21 +3032,27 @@
    MOTORSHOOTING PH - RESPONSIVE CELULAR
 ================================= */
 
+
+/* =================================
+   MOTORSHOOTING PH - RESPONSIVE CELULAR
+================================= */
+
 @media screen and (max-width: 768px) {
 
     .motorshooting-gallery {
         display: flex !important;
         flex-direction: column !important;
-        flex-wrap: nowrap !important;
-        width: 100% !important;
-        gap: 20px;
+        align-items: center !important;
+        gap: 18px;
+        width: 100%;
     }
 
     .motor-photo {
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
-        aspect-ratio: 1 / 1;
+        width: 75% !important;
+        max-width: 320px !important;
+        flex: none !important;
+        aspect-ratio: 1 / 1 !important;
+        overflow: hidden;
         margin: 0 auto;
     }
 
@@ -3058,11 +3064,10 @@
     }
 
     .motor-overlay {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
-
 
 
 
@@ -3300,7 +3305,8 @@
     .product-specs p,
     .product-details p {
         font-size: 13px;
-       
+      
+      
     }
 
 
