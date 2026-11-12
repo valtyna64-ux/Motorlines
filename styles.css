@@ -2378,18 +2378,36 @@
    MOTORSHOOTING PH - RESPONSIVE CELULAR
 ================================= */
 
+/* =================================
+   MOTORSHOOTING PH - RESPONSIVE CELULAR
+================================= */
+
 @media (max-width: 768px) {
 
+    /* Contenedor de las 6 fotografías */
+    .motorshooting-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        width: 100%;
+    }
+
+    /* Cada fotografía */
     .motor-photo {
         width: 100%;
         aspect-ratio: 1 / 1;
+        overflow: hidden;
     }
 
+    /* Imagen */
     .motor-photo img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
+    /* Texto sobre la imagen */
     .motor-overlay {
         font-size: 20px;
     }
